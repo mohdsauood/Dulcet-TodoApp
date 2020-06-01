@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/mohdsauood/doit#readme",
   "dependencies": {
+    "date-fns": "^2.14.0",
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.11"
   }

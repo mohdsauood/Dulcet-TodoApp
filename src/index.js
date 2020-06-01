@@ -1,2 +1,5 @@
+// datefns library
+import {lightFormat} from 'date-fns'
+
 const div=document.querySelector('#nike');
-div.textContent=new Date();
+div.textContent=lightFormat(new Date(),'d/M/y');
