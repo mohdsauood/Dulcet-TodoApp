@@ -1,0 +1,12 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#nike{
+    margin: 10vh 0;
+    text-align: center;
+    height: 10vh;
+    font-size: 2rem;
+}
