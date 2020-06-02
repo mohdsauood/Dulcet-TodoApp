@@ -4,3 +4,99 @@
     box-sizing: border-box;
 }
 
+/*FONTS */
+
+header h2{
+    font-size:1.6em ;
+}
+
+.quote p{
+    font-size: 1.3em;
+}
+
+.navButtons div button{
+    font-size: 1.2em;
+}
+
+.task div p{
+    font-size: 1.1em;
+}
+.task div :nth-child(1){
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.uiButtons button{
+    font-size: 1.2em;
+}
+
+/*grid positions*/
+
+.main{
+    display:grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(6,minmax(1vh,auto));
+    grid-gap:5px;
+}
+
+header{
+    background-color: aqua;
+    grid-column:1/7;
+}
+
+.quote{
+    background-color: beige;
+    grid-column: 1/7;
+}
+
+.navButtons{
+    background-color: burlywood;
+    grid-column: 1/7;
+}
+.tasks{
+    background-color: darkgray;
+    grid-column: 1/7;
+}
+.uiButtons{
+    background-color: darkkhaki;
+    grid-column: 1/7;
+}
+
+/*misc styles*/
+body{
+    overflow-y: hidden;
+}
+header{
+    padding: 2vh;
+}
+header :nth-child(2){
+    margin-top:1vh;
+    text-align: end;
+    font-size: 1.4em;
+}
+
+.quote{
+    margin-bottom: 1vh;
+    height: 12vh;
+}
+
+.navButtons{
+    display: flex;
+    justify-content: space-around;
+}
+.navButtons button{
+    height: 6vh;
+}
+
+.tasks{
+    height: 50vh;
+}
+
+.uiButtons{
+    height:15vh;
+}
+
+
+
+
+
