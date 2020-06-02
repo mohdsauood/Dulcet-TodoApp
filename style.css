@@ -43,7 +43,7 @@ header h2 {
 }
 
 .task div :nth-child(1) {
-    font-size: 1.3em;
+    font-size: 1.1em;
     font-weight: bold;
 }
 
@@ -83,10 +83,12 @@ header {
 /*misc styles*/
 body {
     overflow-y: hidden;
+    background-color:#fdfeff;
 }
 
 header {
     padding: 2vh;
+    text-align: center;
 }
 
 header :nth-child(2) {
@@ -122,9 +124,19 @@ header span {
 .navButtons button {
     height: 6vh;
     padding: .1em .5em;
-    background-color: var(--blue);
-    color: white;
+    background-color: #fdfeff;
+    color:  var(--blue);
     border-radius: 10px;
+
+}
+.navButtons div :nth-child(1){
+   align-self: baseline;
+}
+.im-calendar{
+    border: none;
+}
+.navButtons div :nth-child(2){
+    box-shadow: 9px 9px 16px rgb(163, 177, 198, 0.5), -9px -9px 16px rgba(255, 255, 255, 0.5);
 }
 
 .task {
@@ -135,30 +147,41 @@ header span {
 
 .task div {
     width: 80vw;
-    border: 1px solid rgb(202, 196, 196);
     border-radius: 20px;
     padding: .2em .5em;
     margin: .5em 0;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    background-color: #fdfeff;
+    box-shadow: 9px 9px 16px rgb(163, 177, 198, 0.5), -9px -9px 16px rgba(255, 255, 255, 0.5);
 }
 
 .task div :nth-child(2) {
     justify-self: end;
     align-self: center;
+
 }
 
 .task div :nth-child(3) {
+    font-size: .8em;
     padding-left: 1em;
+    color: grey;
+    width: 100%;
+    grid-column: 1/3;
 }
 
 .task button {
     align-self: center;
     height: 7vh;
     width: 7vh;
-    border-radius: 20px;
-    color: white;
+    border-radius: 12px;
+    color: rgb(255, 255, 255, 0.6);
     background-color: var(--lightred);
+    box-shadow: 3px 3px 5px rgb(163, 177, 198, 0.5), -3px -3px 5px rgba(255, 255, 255, 0.5);
+}
+
+.im-x-mark {
+    font-size: 18px;
 }
 
 .tasks {
@@ -175,5 +198,23 @@ header span {
 }
 
 .uiButtons :nth-child(1) {
-    margin-bottom: 9vh;
+    border-radius: 12px;
+    margin-bottom: 6vh;
+    height: 7vh;
+    background-color: white;
+    box-shadow:5px 5px 8px rgb(163, 177, 198, 0.9), -5px -5px 8px rgba(255, 255, 255, 0.9);
+}
+
+.im-plus {
+    color: var(--lightred);
+    border: 1px solid lightgray;
+    padding: .3em .5em;
+}
+
+.uiButtons :nth-child(2) {
+    border-radius: 12px;
+    padding: .3em .9em;
+    height: 5vh;
+    background-color: var(--blue);
+    color: white;
 }
