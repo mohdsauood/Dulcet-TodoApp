@@ -68,7 +68,10 @@ header {
     grid-column: 1/7;
 }
 
-.navButtons {
+#dynamicContent{
+    grid-column: 1/7;
+}
+/* .navButtons {
     grid-column: 1/7;
 }
 
@@ -78,7 +81,7 @@ header {
 
 .uiButtons {
     grid-column: 1/7;
-}
+} */
 
 /*misc styles*/
 body {
