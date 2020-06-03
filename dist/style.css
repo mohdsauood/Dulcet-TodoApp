@@ -8,7 +8,9 @@
 :root {
     --blue: rgb(85, 122, 221);
     --lightred: rgb(255, 89, 89);
-
+    --background:#E0E5EC;
+    --primary:rgb(137, 150, 168);
+    --primarylight:rgb(175, 190, 212);
 }
 
 /*reset*/
@@ -16,7 +18,7 @@ button {
     background-color: none;
     border: none;
 }
-}
+
 
 @font-face {
     font-family: 'Quicksand';
@@ -83,12 +85,13 @@ header {
 /*misc styles*/
 body {
     overflow-y: hidden;
-    background-color:white;
+    background-color:var(--background);
 }
 
 header {
     padding: 2vh;
     text-align: center;
+    color: var(--primary);
 }
 
 header :nth-child(2) {
@@ -99,8 +102,8 @@ header :nth-child(2) {
 }
 
 header span {
-    color: rgb(151, 149, 144);
     font-weight: normal;
+    color: var(--primarylight);
 }
 
 .quote {
@@ -108,6 +111,7 @@ header span {
     margin-bottom: 1vh;
     height: 12vh;
     text-align: center;
+    color: var(--primary);
     border: 1px solid rgba(211, 211, 211, 0.8);
     border-radius: 10px;
 }
@@ -115,6 +119,7 @@ header span {
 .quote :nth-child(2) {
     font-family: Quicksand;
     font-style: italic;
+    color: var(--primarylight);
 }
 
 .navButtons {
@@ -127,8 +132,8 @@ header span {
 .navButtons button {
     height: 6vh;
     padding: .1em .5em;
-    background-color: #fdfeff;
-    color:  var(--blue);
+    background-color:var(--background);
+    color:  var(--primary);
     border-radius: 10px;
 
 }
@@ -140,8 +145,9 @@ header span {
 }
 .navButtons div :nth-child(2){
     /* box-shadow: 9px 9px 16px rgb(163, 177, 198, 0.5), -9px -9px 16px rgba(255, 255, 255, 0.5); */
-    box-shadow:12px 12px 16px 0 rgba(0, 0, 0, 0.25),
-    -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+    /* box-shadow:12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+    -8px -8px 12px 0 rgba(255, 255, 255, 0.3); */
+    box-shadow: 9px 9px 16px rgb(163,177,198,0.6), -9px -9px 16px  rgba(255,255,255, 0.5);
 }
 
 .task {
@@ -157,7 +163,7 @@ header span {
     margin: .5em 0;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    background-color: white;
+    background-color:--var(--background);
     border: 1px solid lightgray;
     /* box-shadow:12px 12px 16px 0 rgba(0, 0, 0, 0.25),
     -8px -8px 12px 0 rgba(255, 255, 255, 0.3); */
@@ -182,8 +188,8 @@ header span {
     height: 7vh;
     width: 7vh;
     border-radius: 12px;
-    color: rgb(255, 255, 255, 0.6);
-    background-color: var(--lightred);
+    color: var(--lightred);
+    background-color: var(--background);
     box-shadow: 3px 3px 5px rgb(163, 177, 198, 0.5), -3px -3px 5px rgba(255, 255, 255, 0.5);
 }
 
@@ -208,9 +214,10 @@ header span {
     border-radius: 12px;
     margin-bottom: 6vh;
     height: 7vh;
-    background-color: white;
-    box-shadow:8px 8px 12px 0 rgba(0, 0, 0, 0.25),
-    -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+    background-color: var(--background);
+    /* box-shadow:8px 8px 12px 0 rgba(0, 0, 0, 0.25),
+    -8px -8px 12px 0 rgba(255, 255, 255, 0.3); */
+    box-shadow: 9px 9px 16px rgb(163,177,198,0.6), -9px -9px 16px  rgba(255,255,255, 0.5);
 }
 
 .im-plus {
@@ -223,8 +230,9 @@ header span {
     border-radius: 12px;
     padding: .3em .9em;
     height: 5vh;
-    background-color: white;
-    color: var(--blue);
-    box-shadow:12px 12px 16px 0 rgba(0, 0, 0, 0.25),
-    -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+    background-color: var(--background);
+    color: var(--primary);
+    /* box-shadow:12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+    -8px -8px 12px 0 rgba(255, 255, 255, 0.3); */
+    box-shadow: 9px 9px 16px rgb(163,177,198,0.6), -9px -9px 16px  rgba(255,255,255, 0.5);
 }
