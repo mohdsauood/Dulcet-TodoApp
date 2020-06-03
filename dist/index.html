@@ -23,9 +23,20 @@
             <p>-martin luthor</p>
         </section>
         <div id="dynamicContent">
-            <form >
+            <!-- validation later -->
+            <form>
                 <input type="text" placeholder="title" id="title">
                 <textarea placeholder="description" id="description" cols="30" rows="10"></textarea>
+                <label for="priority">Set a Priority</label>
+                    <select  id="priority">
+                        <option value="1">No Rush</option>
+                        <option value="2">Hurry Up</option>
+                        <option value="3">Very Urgent</option>
+                    </select>
+                    <br>
+                    <br>
+                <label for="duedate">Set a DueDate</label>
+                <input type="date" id="duedate">
             </form>
         </div>
     </section>

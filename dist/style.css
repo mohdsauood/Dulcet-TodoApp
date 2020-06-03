@@ -6,7 +6,7 @@
 }
 
 :root {
-    --blue: rgb(85, 122, 221);
+    --blue: rgb(115, 147, 235);
     --lightred: rgb(255, 89, 89);
     --background: #ECF0F3;
     --primary: #555555;
@@ -255,6 +255,16 @@ header span {
         -7px -7px 10px #ffffff;
 }
 
+.red{
+    color: rgb(250, 108, 108);
+}
+.yellow{
+    color:rgb(248, 248, 124);
+}
+.orange{
+    color: rgb(248, 207, 130);
+}
+
 /*form page*/
 form{
     border: none;
@@ -270,3 +280,35 @@ form input,form textarea{
     border-radius: 25px;
     box-shadow: inset 8px 8px 8px #cbced1, inset -8px -8px 8px #ffffff;
 }
+
+form select,form input[type="date"]  {
+    background-color:var(--background);
+    border: none;
+    border-radius: 10px;
+    box-shadow: 7px 7px 10px #cbced1,
+        -7px -7px 10px #ffffff;
+    color: var(--primary);
+}
+
+
+
+select :nth-child(1){
+    background-color:rgb(248, 248, 124);
+}
+select :nth-child(2){
+    background-color:rgb(248, 207, 130);
+}
+select :nth-child(3){
+    background-color: rgb(250, 108, 108);
+}
+
+
+
+
+
+
+
+
+
+
+
