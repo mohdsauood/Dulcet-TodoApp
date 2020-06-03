@@ -254,3 +254,19 @@ header span {
     box-shadow: 7px 7px 10px #cbced1,
         -7px -7px 10px #ffffff;
 }
+
+/*form page*/
+form{
+    border: none;
+    background-color: var(--background);
+    padding: 1em;
+}
+
+form input,form textarea{
+    margin: .5em 0;
+    padding: .5em .5em;
+    border: none;
+    background-color: var(--background);
+    border-radius: 25px;
+    box-shadow: inset 8px 8px 8px #cbced1, inset -8px -8px 8px #ffffff;
+}
