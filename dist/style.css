@@ -291,6 +291,7 @@ header span {
     font-size: 1.1em;
     font-weight: bold;
 }
+
 .viewingTask form textarea{
     color: var(--primary);
 }
@@ -305,6 +306,7 @@ header span {
     font-size: 1.1em;
     font-weight: bold;
 }
+
 .viewingTask p{
     padding:.5em 1em;
     color: var(--primary);
