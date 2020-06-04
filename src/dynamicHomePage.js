@@ -13,10 +13,10 @@ const generateHomepageContent = () => {
     <section class="tasks">
     <section class="task">
         <div id="task">
-            <p>Workout</p>
+            <p>Title</p>
             <p><i class="im im-circle-o"></i>
             </p>
-            <p>today 7pm</p>
+            <p>due date</p>
     
         </div>
         <button><i class="im im-x-mark"></i>
@@ -24,24 +24,27 @@ const generateHomepageContent = () => {
     </section>
     <section class="task">
         <div id="task">
-            <p>homework</p>
+            <p>Title</p>
             <p><i class="im im-circle-o"></i>
             </p>
-            <p>today 11pm</p>
-        </div id="task">
-        <button><i class="im im-x-mark"></i>
-        </button>
-    </section>
-    <section class="task">
-        <div>
-            <p>service bike</p>
-            <p><i class="im im-circle-o"></i>
-            </p>
-            <p>march 29th 10am</p>
+            <p>due date</p>
+    
         </div>
         <button><i class="im im-x-mark"></i>
         </button>
     </section>
+    <section class="task">
+        <div id="task">
+            <p>Title</p>
+            <p><i class="im im-circle-o"></i>
+            </p>
+            <p>due date</p>
+    
+        </div>
+        <button><i class="im im-x-mark"></i>
+        </button>
+    </section>
+   
     </section>
     <section class="uiButtons">
     <button id="addButton"> <i class="im im-plus"></i></button>

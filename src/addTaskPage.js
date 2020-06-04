@@ -6,6 +6,7 @@ const generateAddTaskContent = () => {
     <form>
         <input type="text" placeholder="title" id="title">
         <textarea placeholder="description" id="description" cols="30" rows="10"></textarea>
+       <br>
         <label for="priority">Set a Priority</label>
             <select  id="priority">
                 <option value="1">No Rush</option>
