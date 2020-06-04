@@ -44,7 +44,7 @@ const generateHomepageContent=()=>{
     </section>
     </section>
     <section class="uiButtons">
-    <button> <i class="im im-plus"></i></button>
+    <button id="addButton"> <i class="im im-plus"></i></button>
     <button>clear list</button>
     </section>`;
 }

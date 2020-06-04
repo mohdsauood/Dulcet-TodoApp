@@ -254,3 +254,102 @@ header span {
     box-shadow: 7px 7px 10px #cbced1,
         -7px -7px 10px #ffffff;
 }
+
+
+/*form page*/
+.backButton{
+    border-radius: 12px;
+    padding: .3em .9em;
+    height: 5vh;
+    background-color: var(--background);
+    color: var(--primary);
+    box-shadow: 7px 7px 10px #cbced1,
+        -7px -7px 10px #ffffff;
+}
+
+form {
+    border: none;
+    background-color: var(--background);
+    padding: 1em;
+}
+
+form input,
+form textarea {
+    margin: .5em 0;
+    padding: .5em .5em;
+    border: none;
+    background-color: var(--background);
+    border-radius: 25px;
+    box-shadow: inset 8px 8px 8px #cbced1, inset -8px -8px 8px #ffffff;
+}
+
+form select,
+form input[type="date"] {
+    background-color: var(--background);
+    border: none;
+    border-radius: 10px;
+    box-shadow: 7px 7px 10px #cbced1,
+        -7px -7px 10px #ffffff;
+    color: var(--primary);
+}
+
+
+
+select :nth-child(1) {
+    background-color: rgb(248, 248, 124);
+}
+
+select :nth-child(2) {
+    background-color: rgb(248, 207, 130);
+}
+
+select :nth-child(3) {
+    background-color: rgb(250, 108, 108);
+}
+
+/**view task page**/
+
+.viewingTask {
+    margin: 1vh 0;
+}
+
+.viewingTask form {
+    border: none;
+    background-color: var(--background);
+    padding: 1em;
+    padding-top: 0;
+}
+
+.viewingTask form input,
+.viewingTask form textarea {
+    margin: .1em 0;
+    padding: .1em .1em;
+    border: none;
+    background-color: var(--background);
+}
+.viewingTask form input{
+    margin-bottom: 2vh;
+    color: var(--blue);
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.viewingTask form textarea{
+    color: var(--primary);
+}
+.viewingTask p:nth-child(1){
+  padding:0 1em;
+  color: var(--primarylight);
+  text-align: right;
+}
+
+.viewingTask span{
+    color: var(--blue);
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.viewingTask p{
+    padding:.5em 1em;
+    color: var(--primary);
+}
