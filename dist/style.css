@@ -68,9 +68,10 @@ header {
     grid-column: 1/7;
 }
 
-#dynamicContent{
+#dynamicContent {
     grid-column: 1/7;
 }
+
 /* .navButtons {
     grid-column: 1/7;
 }
@@ -254,3 +255,58 @@ header span {
     box-shadow: 7px 7px 10px #cbced1,
         -7px -7px 10px #ffffff;
 }
+
+/*view task page*/
+.backButton {
+    border-radius: 12px;
+    padding: .3em .9em;
+    height: 5vh;
+    background-color: var(--background);
+    color: var(--primary);
+    box-shadow: 7px 7px 10px #cbced1,
+        -7px -7px 10px #ffffff;
+}
+
+.viewingTask {
+    margin: 1vh 0;
+}
+
+.viewingTask form {
+    border: none;
+    background-color: var(--background);
+    padding: 1em;
+    padding-top: 0;
+}
+
+.viewingTask form input,
+.viewingTask form textarea {
+    margin: .1em 0;
+    padding: .1em .1em;
+    border: none;
+    background-color: var(--background);
+}
+.viewingTask form input{
+    margin-bottom: 2vh;
+    color: var(--blue);
+    font-size: 1.1em;
+    font-weight: bold;
+}
+.viewingTask form textarea{
+    color: var(--primary);
+}
+.viewingTask p:nth-child(1){
+  padding:0 1em;
+  color: var(--primarylight);
+  text-align: right;
+}
+
+.viewingTask span{
+    color: var(--blue);
+    font-size: 1.1em;
+    font-weight: bold;
+}
+.viewingTask p{
+    padding:.5em 1em;
+    color: var(--primary);
+}
+
