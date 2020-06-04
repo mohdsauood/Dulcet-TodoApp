@@ -12,7 +12,7 @@ const generateHomepageContent = () => {
     </section>
     <section class="tasks">
     <section class="task">
-        <div>
+        <div id="task">
             <p>Workout</p>
             <p><i class="im im-circle-o"></i>
             </p>
@@ -23,12 +23,12 @@ const generateHomepageContent = () => {
         </button>
     </section>
     <section class="task">
-        <div>
+        <div id="task">
             <p>homework</p>
             <p><i class="im im-circle-o"></i>
             </p>
             <p>today 11pm</p>
-        </div>
+        </div id="task">
         <button><i class="im im-x-mark"></i>
         </button>
     </section>
