@@ -1,6 +1,6 @@
-const generateHomepageContent=()=>{
-    const dynamicContent=document.querySelector('#dynamicContent');
-    dynamicContent.innerHTML=`<section class="navButtons">
+const generateHomepageContent = () => {
+    const dynamicContent = document.querySelector('#dynamicContent');
+    dynamicContent.innerHTML = `<section class="navButtons">
     <div>
         <button><i class="im im-calendar"></i></button>
         <button>Previous Day</button>
@@ -49,4 +49,6 @@ const generateHomepageContent=()=>{
     </section>`;
 }
 
-export {generateHomepageContent}
+export {
+    generateHomepageContent
+}
