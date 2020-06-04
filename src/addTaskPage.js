@@ -1,8 +1,9 @@
+
 const generateAddTaskContent=()=>{
     console.log('hi im generateaddtaskcontent function')
     const dynamicContent=document.querySelector('#dynamicContent');
     dynamicContent.innerHTML='';
-    dynamicContent.innerHTML=` <button class="backButton"><i class="im im-angle-left"></i></button>
+    dynamicContent.innerHTML=` <button id="AddTaskBack" class="backButton"><i class="im im-angle-left"></i></button>
     <!-- validation later -->
     <form>
         <input type="text" placeholder="title" id="title">
@@ -18,5 +19,6 @@ const generateAddTaskContent=()=>{
         <label for="duedate">Enter a DueDate</label>
         <input type="text" id="duedate" placeholder="March 23 11am">
     </form>`;
+    
 }
 export {generateAddTaskContent}

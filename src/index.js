@@ -7,7 +7,16 @@ import {generateAddTaskContent} from './addTaskPage.js'
 const addEventss=()=>{
     //event for add task button
     const addButton=document.querySelector('#addButton');
-    addButton.addEventListener('click',generateAddTaskContent);
+    addButton.addEventListener('click',()=>{
+        generateAddTaskContent();
+        //event for backButton on AddTaskPage
+        const backButton=document.querySelector('#AddTaskBack');
+        backButton.addEventListener('click',()=>{
+            generateHomepageContent();
+            addEventss();
+        });
+    });
+    
 }
 
 window.addEventListener('load',()=>{
