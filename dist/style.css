@@ -68,9 +68,10 @@ header {
     grid-column: 1/7;
 }
 
-#dynamicContent{
+#dynamicContent {
     grid-column: 1/7;
 }
+
 /* .navButtons {
     grid-column: 1/7;
 }
@@ -255,24 +256,37 @@ header span {
         -7px -7px 10px #ffffff;
 }
 
-.red{
+.red {
     color: rgb(250, 108, 108);
 }
-.yellow{
-    color:rgb(248, 248, 124);
+
+.yellow {
+    color: rgb(248, 248, 124);
 }
-.orange{
+
+.orange {
     color: rgb(248, 207, 130);
 }
 
 /*form page*/
-form{
+.backButton{
+    border-radius: 12px;
+    padding: .3em .9em;
+    height: 5vh;
+    background-color: var(--background);
+    color: var(--primary);
+    box-shadow: 7px 7px 10px #cbced1,
+        -7px -7px 10px #ffffff;
+}
+
+form {
     border: none;
     background-color: var(--background);
     padding: 1em;
 }
 
-form input,form textarea{
+form input,
+form textarea {
     margin: .5em 0;
     padding: .5em .5em;
     border: none;
@@ -281,8 +295,9 @@ form input,form textarea{
     box-shadow: inset 8px 8px 8px #cbced1, inset -8px -8px 8px #ffffff;
 }
 
-form select,form input[type="date"]  {
-    background-color:var(--background);
+form select,
+form input[type="date"] {
+    background-color: var(--background);
     border: none;
     border-radius: 10px;
     box-shadow: 7px 7px 10px #cbced1,
@@ -292,23 +307,14 @@ form select,form input[type="date"]  {
 
 
 
-select :nth-child(1){
-    background-color:rgb(248, 248, 124);
+select :nth-child(1) {
+    background-color: rgb(248, 248, 124);
 }
-select :nth-child(2){
-    background-color:rgb(248, 207, 130);
+
+select :nth-child(2) {
+    background-color: rgb(248, 207, 130);
 }
-select :nth-child(3){
+
+select :nth-child(3) {
     background-color: rgb(250, 108, 108);
 }
-
-
-
-
-
-
-
-
-
-
-
