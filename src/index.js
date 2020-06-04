@@ -1,6 +1,6 @@
 // datefns library
 import {
-    lightFormat
+    lightFormat,format
 } from 'date-fns'
 import {
     generateHomepageContent
@@ -11,8 +11,14 @@ import {
 import {
     generateViewTaskpageContent
 } from './viewTaskPage.js'
+import {
+    setQuote
+} from './quotesGenerator.js'
 // var result = parse('23 march 6am', 'd MMMM ha', new Date());
 // console.log(result);
+
+//setting quote
+setQuote(format(new Date(),'eee'));
 
 // functions for adding events to respective buttons
 const backButtonEvent = () => {
