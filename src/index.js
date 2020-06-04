@@ -17,8 +17,7 @@ import {
 // var result = parse('23 march 6am', 'd MMMM ha', new Date());
 // console.log(result);
 
-//setting quote
-setQuote(format(new Date(),'eee'));
+
 
 // functions for adding events to respective buttons
 const backButtonEvent = () => {
@@ -45,13 +44,23 @@ const viewTaskButtonEvent = () => {
     })
 }
 
+const setCurrentDate=()=>{
+const dateElement=document.querySelector('#homePageDate');
+dateElement.textContent=format(new Date(),'do MMMM yyy');
+}
 
 const addHomePageEvents = () => {
     addButtonEvent();
     viewTaskButtonEvent();
 }
 
-window.addEventListener('load', () => {
-    generateHomepageContent();
-    addHomePageEvents();
-});
+// window.addEventListener('load', () => {
+//     generateHomepageContent();
+//     addHomePageEvents();
+// });
+
+//setting quote
+setQuote(format(new Date(),'eee'));
+setCurrentDate();
+generateHomepageContent();
+addHomePageEvents();
