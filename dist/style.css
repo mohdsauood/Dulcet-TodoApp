@@ -306,6 +306,7 @@ form input[type="date"] {
         -7px -7px 10px #ffffff;
     color: var(--primary);
 }
+
 form input[type="date"] {
     width: 40vw;
     font-size: .7em;
