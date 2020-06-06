@@ -28,6 +28,7 @@
             <form >
                 <label for="priority">Set a Priority</label>
                 <select  id="priority" required>
+                    <option default value="" selected disabled hidden>priority level</option>
                     <option value="1">No Rush</option>
                     <option value="2">Hurry Up</option>
                     <option value="3">Very Urgent</option>
@@ -36,8 +37,9 @@
             <span>Set a DueDate</span>
             <input type="date" required>
             <br>
-            <span>time</span>
+            <span>Time</span>
             <select id="hour">
+                <option default value="" selected disabled hidden>Hour</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -52,18 +54,21 @@
                 <option value="12">12</option>
             </select>
             <select  id="minute">
+                <option default value="" selected disabled hidden>minutes</option>
                 <option value="1">00</option>
                 <option value="2">15</option>
                 <option value="3">30</option>
                 <option value="4">45</option>
             </select>
             <select  id="ampm">
+                <option default value="" selected disabled hidden>am/pm</option>
                 <option value="1">am</option>
                 <option value="2">pm</option>
             </select>
                 <input type="text" placeholder="title" id="title"  maxlength="20" >
                 <textarea placeholder="description" id="description" cols="30" rows="10" maxlength="300"></textarea>
-               <span>error</span>
+               <br>
+                <span>error</span>
             </form>
         </div>
     </section>
