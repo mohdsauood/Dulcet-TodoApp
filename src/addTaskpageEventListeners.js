@@ -1,7 +1,16 @@
-const eventsForAddTaskPage=(fn)=>{
+const dateEventForAddTaskPage=(fn,parse,isPast)=>{
     const dateElement=document.querySelector('#duedate');
-    dateElement.addEventListener('input',fn);
-    dateElement.addEventListener('keyup',fn);
+    dateElement.addEventListener('input',(e)=>{
+        fn(e,parse,isPast);
+    });
+    dateElement.addEventListener('keyup',(e)=>{
+        fn(e,parse,isPast);
+    });
 }
 
-export{eventsForAddTaskPage}
+
+const backButtonEventForAddTaskPage=()=>{
+
+}
+
+export{dateEventForAddTaskPage,backButtonEventForAddTaskPage}
