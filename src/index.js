@@ -10,10 +10,12 @@ setError,clearError,checkError
 } from './errorHandlers.js'
 
 import{
-    dateEventForAddTaskPage
+    dateEventForAddTaskPage,formSubmitEventForAddTaskPage
 } from './addTaskpageEventListeners.js'
 
 
 
 dateEventForAddTaskPage(checkError,parse,isPast);
+formSubmitEventForAddTaskPage(checkError,parse,isPast);
+
 
