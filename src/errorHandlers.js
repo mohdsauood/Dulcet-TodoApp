@@ -19,10 +19,7 @@ const checkError=(event,parse,isPast)=>{
         setError('Due date already passed ,set new date');
         return false;
     }
-    else if(dateElement.validity.valueMissing){
-        event.preventDefault();
-        setError('set a due date for your task');
-    }
+    
 }
 
 
