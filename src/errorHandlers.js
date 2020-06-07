@@ -9,18 +9,19 @@ const clearError=()=>{
     span.textContent="";
 }
 
-const checkError=(e,parse,isPast)=>{
+const checkError=(event,parse,isPast)=>{
     const dateElement=document.querySelector('#duedate');
     clearError();
     let dateValue=parse(dateElement.value,'yyyy-MM-dd',new Date());
     if(isPast(dateValue))
     {
-        e.preventDefault();
+        event.preventDefault();
         setError('Due date already passed ,set new date');
+        return false;
     }
-    else if(x){
-        //make backbutton a form submit button
-        //check if required etc etc
+    else if(dateElement.validity.valueMissing){
+        event.preventDefault();
+        setError('set a due date for your task');
     }
 }
 
