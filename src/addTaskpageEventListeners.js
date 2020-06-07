@@ -13,6 +13,7 @@ const formSubmitEventForAddTaskPage=(fn,parse,isPast)=>{
     const form=document.querySelector('form');
     form.addEventListener('submit',(e)=>{
         fn(e,parse,isPast);
+        
     })
 }
 
