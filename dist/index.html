@@ -23,11 +23,12 @@
             <p>-martin luthor</p>
         </section>
         <div id="dynamicContent">
-            <button class="backButton"><i class="im im-angle-left"></i></button>
             <!-- validation later -->
-            <form >
+            <form novalidate>
+                <button type="submit" id="backButton" class="backButton"><i class="im im-angle-left"></i></button>
+                <br>
                 <label for="priority">Set a Priority</label>
-                <select  id="priority" required>
+                <select  id="priority">
                     <option default value="" selected disabled hidden>priority level</option>
                     <option value="1">No Rush</option>
                     <option value="2">Hurry Up</option>
