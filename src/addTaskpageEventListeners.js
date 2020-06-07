@@ -9,8 +9,11 @@ const dateEventForAddTaskPage=(fn,parse,isPast)=>{
 }
 
 
-const backButtonEventForAddTaskPage=()=>{
-
+const formSubmitEventForAddTaskPage=(fn,parse,isPast)=>{
+    const form=document.querySelector('form');
+    form.addEventListener('submit',(e)=>{
+        fn(e,parse,isPast);
+    })
 }
 
-export{dateEventForAddTaskPage,backButtonEventForAddTaskPage}
+export{dateEventForAddTaskPage,formSubmitEventForAddTaskPage}
