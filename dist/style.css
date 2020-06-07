@@ -312,5 +312,14 @@ form input[type="date"] {
     font-size: .7em;
 }
 
+/* input:invalid{
+    background-color: var(--lightred);
+  } */
 
+#errorSpan{
+color: var(--lightred);
+font-size: 1.3em;
+text-transform: uppercase;
+font-weight: bold;
+}
 
