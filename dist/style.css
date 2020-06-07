@@ -318,7 +318,7 @@ form input[type="date"] {
 
 #errorSpan{
 color: var(--lightred);
-font-size: 1.3em;
+font-size: 1.2em;
 text-transform: uppercase;
 font-weight: bold;
 }
