@@ -2,7 +2,7 @@ import {
     generateHomepageContent
 } from './dynamicHomePage.js'
 import {
-    generateHomepageEvents
+    steve
 } from './homePageEventListeners.js'
 import {
     checkError
@@ -27,7 +27,7 @@ const backButtonEventForAddTaskPage=(parse,isPast)=>{
         if( checkError(e,parse,isPast))
         {
             generateHomepageContent();
-            generateHomepageEvents();
+            steve();
         }
     })
 }

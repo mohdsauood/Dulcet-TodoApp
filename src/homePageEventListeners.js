@@ -25,11 +25,12 @@ const viewTaskButtonEvent = () => {
     })
 }
 
-const  generateHomepageEvents=(parse,isPast)=>{
+const steve = (parse,isPast)=>{
     addButtonEvent(parse,isPast);
     viewTaskButtonEvent();
 }
 
+export {steve}
 
 
 

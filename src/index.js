@@ -9,14 +9,12 @@ import {
     generateHomepageContent
 } from './dynamicHomePage.js'
 import {
-    generateHomepageEvents
+    steve
 } from './homePageEventListeners.js'
 import {
     setQuote,setCurrentDate
 } from './quotesGenerator.js'
-import {
-    checkError
-} from './errorHandlers.js'
+
 
 
 
@@ -24,4 +22,4 @@ import {
 setQuote(format(new Date(), 'eee'));
 setCurrentDate();
 generateHomepageContent();
-generateHomepageEvents(parse,isPast);
+steve(parse,isPast);
