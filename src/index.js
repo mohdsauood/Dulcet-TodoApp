@@ -1,6 +1,9 @@
 // datefns library
 import {
-    lightFormat,format
+    lightFormat,
+    format,
+    parse,
+    isPast
 } from 'date-fns'
 import {
     generateHomepageContent
@@ -14,24 +17,26 @@ import {
 import {
     setQuote
 } from './quotesGenerator.js'
-// var result = parse('23 march 6am', 'd MMMM ha', new Date());
-// console.log(result);
+import {
+    checkError
+} from './errorHandlers.js'
+
+import {
+    generateAddTaskPageEvents
+} from './addTaskpageEventListeners.js'
+
+
+
 
 
 
 // functions for adding events to respective buttons
-const backButtonEvent = () => {
-    const backButton = document.querySelector('#AddTaskBack');
-    backButton.addEventListener('click', () => {
-        generateHomepageContent();
-        addHomePageEvents();
-    });
-}
+
 const addButtonEvent = () => {
     const addButton = document.querySelector('#addButton');
     addButton.addEventListener('click', () => {
         generateAddTaskContent();
-        backButtonEvent();
+        generateAddTaskPageEvents(checkError,parse,isPast);
     });
 }
 const viewTaskButtonEvent = () => {
@@ -44,9 +49,9 @@ const viewTaskButtonEvent = () => {
     })
 }
 
-const setCurrentDate=()=>{
-const dateElement=document.querySelector('#homePageDate');
-dateElement.textContent=format(new Date(),'do MMMM yyy');
+const setCurrentDate = () => {
+    const dateElement = document.querySelector('#homePageDate');
+    dateElement.textContent = format(new Date(), 'do MMMM yyy');
 }
 
 const addHomePageEvents = () => {
@@ -60,7 +65,7 @@ const addHomePageEvents = () => {
 // });
 
 //setting quote
-setQuote(format(new Date(),'eee'));
+setQuote(format(new Date(), 'eee'));
 setCurrentDate();
 generateHomepageContent();
 addHomePageEvents();
