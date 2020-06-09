@@ -1,30 +1,40 @@
-const dateEventForAddTaskPage=(fn,parse,isPast)=>{
+import {
+    generateHomepageContent
+} from './dynamicHomePage.js'
+import {
+    generateHomepageEvents
+} from './homePageEventListeners.js'
+import {
+    checkError
+} from './errorHandlers.js'
+
+const dateEventForAddTaskPage=(parse,isPast)=>{
     const dateElement=document.querySelector('#duedate');
     dateElement.addEventListener('input',(e)=>{
-        fn(e,parse,isPast);
+        checkError(e,parse,isPast);
     });
     dateElement.addEventListener('keyup',(e)=>{
-        fn(e,parse,isPast);
+        checkError(e,parse,isPast);
     });
 }
 //if met objectCreation coniditions i.e either title or descirption not null
 // then pass values through factory function
 
-const backButtonEventForAddTaskPage=(fn,parse,isPast,Ghomepage,Ehomepage)=>{
+const backButtonEventForAddTaskPage=(parse,isPast)=>{
     const backButton=document.querySelector('#backButton');
     backButton.addEventListener('click',(e)=>{
-        fn(e,parse,isPast);
-        if( fn(e,parse,isPast))
+        checkError(e,parse,isPast);
+        if( checkError(e,parse,isPast))
         {
-           Ghomepage();
-           Ehomepage();
+            generateHomepageContent();
+            generateHomepageEvents();
         }
     })
 }
 
-const generateAddTaskPageEvents=(fn,parse,isPast,Ghomepage,Ehomepage)=>{
-    dateEventForAddTaskPage(fn,parse,isPast);
-    backButtonEventForAddTaskPage(fn,parse,isPast,Ghomepage,Ehomepage);
+const generateAddTaskPageEvents=(parse,isPast)=>{
+    dateEventForAddTaskPage(parse,isPast);
+    backButtonEventForAddTaskPage(parse,isPast);
 }
 
 export {generateAddTaskPageEvents}
