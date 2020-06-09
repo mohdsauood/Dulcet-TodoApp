@@ -9,12 +9,17 @@ const dateEventForAddTaskPage=(fn,parse,isPast)=>{
 }
 
 
-const formSubmitEventForAddTaskPage=(fn,parse,isPast)=>{
-    const form=document.querySelector('form');
-    form.addEventListener('submit',(e)=>{
+const backButtonEventForAddTaskPage=(fn,parse,isPast)=>{
+    const backButton=document.querySelector('#backButton');
+    backButton.addEventListener('click',(e)=>{
         fn(e,parse,isPast);
-        
+        if( fn(e,parse,isPast))
+        {
+            console.log('ab hum nikalenge yahan se');
+        }
     })
 }
 
-export{dateEventForAddTaskPage,formSubmitEventForAddTaskPage}
+
+
+export{dateEventForAddTaskPage,backButtonEventForAddTaskPage}
