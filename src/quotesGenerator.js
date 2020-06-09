@@ -40,5 +40,8 @@ const setQuote=(day)=>{
     const authorElement=document.querySelector('.quoteAuthor');
     authorElement.textContent=`-${author}`
 }
-export {setQuote}
+function testman(){
+    console.log('im tester haha');
+}
+export {setQuote,testman}
 
