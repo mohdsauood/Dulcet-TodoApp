@@ -7,22 +7,24 @@ const dateEventForAddTaskPage=(fn,parse,isPast)=>{
         fn(e,parse,isPast);
     });
 }
+//if met objectCreation coniditions i.e either title or descirption not null
+// then pass values through factory function
 
-
-const backButtonEventForAddTaskPage=(fn,parse,isPast)=>{
+const backButtonEventForAddTaskPage=(fn,parse,isPast,Ghomepage,Ehomepage)=>{
     const backButton=document.querySelector('#backButton');
     backButton.addEventListener('click',(e)=>{
         fn(e,parse,isPast);
         if( fn(e,parse,isPast))
         {
-            console.log('ab hum nikalenge yahan se');
+           Ghomepage();
+           Ehomepage();
         }
     })
 }
 
-const generateAddTaskPageEvents=(fn,parse,isPast)=>{
+const generateAddTaskPageEvents=(fn,parse,isPast,Ghomepage,Ehomepage)=>{
     dateEventForAddTaskPage(fn,parse,isPast);
-    backButtonEventForAddTaskPage(fn,parse,isPast);
+    backButtonEventForAddTaskPage(fn,parse,isPast,Ghomepage,Ehomepage);
 }
 
 export {generateAddTaskPageEvents}
