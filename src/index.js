@@ -26,17 +26,13 @@ import {
 } from './addTaskpageEventListeners.js'
 
 
-
-
-
-
-// functions for adding events to respective buttons
+// Event listeners for home page
 
 const addButtonEvent = () => {
     const addButton = document.querySelector('#addButton');
     addButton.addEventListener('click', () => {
         generateAddTaskContent();
-        generateAddTaskPageEvents(checkError,parse,isPast);
+        generateAddTaskPageEvents(checkError,parse,isPast,generateHomepageContent,addHomePageEvents);
     });
 }
 const viewTaskButtonEvent = () => {
@@ -48,23 +44,20 @@ const viewTaskButtonEvent = () => {
         });
     })
 }
+const addHomePageEvents = () => {
+    addButtonEvent();
+    viewTaskButtonEvent();
+}
+
+//setting date everyday
 
 const setCurrentDate = () => {
     const dateElement = document.querySelector('#homePageDate');
     dateElement.textContent = format(new Date(), 'do MMMM yyy');
 }
 
-const addHomePageEvents = () => {
-    addButtonEvent();
-    viewTaskButtonEvent();
-}
 
-// window.addEventListener('load', () => {
-//     generateHomepageContent();
-//     addHomePageEvents();
-// });
 
-//setting quote
 setQuote(format(new Date(), 'eee'));
 setCurrentDate();
 generateHomepageContent();
