@@ -19,6 +19,7 @@ const checkError=(event,parse,isPast)=>{
         setError('Due date already passed ,set new date');
         return false;
     }
+    return true;
     
 }
 
