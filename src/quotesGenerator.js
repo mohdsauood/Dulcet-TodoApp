@@ -40,8 +40,10 @@ const setQuote=(day)=>{
     const authorElement=document.querySelector('.quoteAuthor');
     authorElement.textContent=`-${author}`
 }
-function testman(){
-    console.log('im tester haha');
+const setCurrentDate = () => {
+    const dateElement = document.querySelector('#homePageDate');
+    dateElement.textContent = format(new Date(), 'do MMMM yyy');
 }
-export {setQuote,testman}
+
+export {setQuote,setCurrentDate}
 
