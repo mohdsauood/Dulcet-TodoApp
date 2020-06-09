@@ -25,7 +25,7 @@
         <div id="dynamicContent">
             <!-- validation later -->
             <form novalidate>
-                <button type="submit" id="backButton" class="backButton"><i class="im im-angle-left"></i></button>
+                <button id="backButton" class="backButton"><i class="im im-angle-left"></i></button>
                 <br>
                 <label for="priority">Set a Priority</label>
                 <select  id="priority">
@@ -56,18 +56,18 @@
             </select>
             <select  id="minute">
                 <option default value="" selected disabled hidden>minutes</option>
-                <option value="1">00</option>
-                <option value="2">15</option>
-                <option value="3">30</option>
-                <option value="4">45</option>
+                <option value="00">00</option>
+                <option value="15">15</option>
+                <option value="30">30</option>
+                <option value="45">45</option>
             </select>
             <select  id="ampm">
                 <option default value="" selected disabled hidden>am/pm</option>
-                <option value="1">am</option>
-                <option value="2">pm</option>
+                <option value="am">am</option>
+                <option value="pm">pm</option>
             </select>
                 <input type="text" placeholder="title" id="title"  maxlength="20" >
-                <textarea placeholder="description" id="description" cols="30" rows="10" maxlength="300"></textarea>
+                <textarea placeholder="description" id="description" cols="30" rows="10"></textarea>
                <br>
                 <span id="errorSpan"></span>
             </form>
