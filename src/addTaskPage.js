@@ -1,23 +1,53 @@
 const generateAddTaskContent = () => {
     console.log('hi im generateaddtaskcontent function')
     const dynamicContent = document.querySelector('#dynamicContent');
-    dynamicContent.innerHTML = ` <button id="AddTaskBack" class="backButton"><i class="im im-angle-left"></i></button>
-    <!-- validation later -->
-    <form>
-        <input type="text" placeholder="title" id="title">
-        <textarea placeholder="description" id="description" cols="30" rows="10"></textarea>
-       <br>
-        <label for="priority">Set a Priority</label>
-            <select  id="priority">
-                <option value="1">No Rush</option>
-                <option value="2">Hurry Up</option>
-                <option value="3">Very Urgent</option>
-            </select>
-            <br>
-            <br>
-        <label for="duedate">Enter a DueDate</label>
-        <input type="text" id="duedate" placeholder="March 23 11am">
-    </form>`;
+    dynamicContent.innerHTML = ` <form novalidate>
+    <button id="backButton" class="backButton"><i class="im im-angle-left"></i></button>
+    <br>
+    <label for="priority">Set a Priority</label>
+    <select  id="priority">
+        <option default value="" selected disabled hidden>priority level</option>
+        <option value="1">No Rush</option>
+        <option value="2">Hurry Up</option>
+        <option value="3">Very Urgent</option>
+    </select>
+    <br>
+<span>Set a DueDate</span>
+<input id="duedate" type="date" >
+<br>
+<span>Time</span>
+<select id="hour">
+    <option default value="" selected disabled hidden>Hour</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+    <option value="10">10</option>
+    <option value="11">11</option>
+    <option value="12">12</option>
+</select>
+<select  id="minute">
+    <option default value="" selected disabled hidden>minutes</option>
+    <option value="00">00</option>
+    <option value="15">15</option>
+    <option value="30">30</option>
+    <option value="45">45</option>
+</select>
+<select  id="ampm">
+    <option default value="" selected disabled hidden>am/pm</option>
+    <option value="am">am</option>
+    <option value="pm">pm</option>
+</select>
+    <input type="text" placeholder="title" id="title"  maxlength="20" >
+    <textarea placeholder="description" id="description" cols="30" rows="10"></textarea>
+   <br>
+    <span id="errorSpan"></span>
+</form>`;
 
 }
 export {
