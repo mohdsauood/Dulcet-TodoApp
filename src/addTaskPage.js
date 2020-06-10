@@ -6,9 +6,9 @@ const generateAddTaskContent = () => {
     <label for="priority">Set a Priority</label>
     <select  id="priority">
         <option default value="" selected disabled hidden>priority level</option>
-        <option value="1">No Rush</option>
-        <option value="2">Hurry Up</option>
-        <option value="3">Very Urgent</option>
+        <option value="No Rush">No Rush</option>
+        <option value="Hurry Up">Hurry Up</option>
+        <option value="Very Urgent">Very Urgent</option>
     </select>
     <br>
 <span>Set a DueDate</span>
@@ -39,8 +39,8 @@ const generateAddTaskContent = () => {
 </select>
 <select  id="ampm">
     <option default value="" selected disabled hidden>am/pm</option>
-    <option value="am">am</option>
-    <option value="pm">pm</option>
+    <option value="AM">AM</option>
+    <option value="PM">PM</option>
 </select>
     <input type="text" placeholder="title" id="title"  maxlength="20" >
     <textarea placeholder="description" id="description" cols="30" rows="10"></textarea>
