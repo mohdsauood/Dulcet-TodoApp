@@ -139,6 +139,9 @@ header span {
     text-align: right;
 }
 
+.quoteAuthor{
+    margin-top:.5em ;
+}
 .navButtons {
     display: flex;
     justify-content: space-between;
@@ -300,9 +303,9 @@ form input[type="date"] {
     font-size: .7em;
 }
 
-/* input:invalid{
-    background-color: var(--lightred);
-  } */
+form label,form span{
+    color: var(--primary);
+}
 
   #errorSpan{
     color: var(--lightred);
