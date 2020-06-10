@@ -9,7 +9,7 @@ import {
     generateHomepageContent
 } from './dynamicHomePage.js'
 import {
-    steve
+    generateHomepageEvents
 } from './homePageEventListeners.js'
 import {
     setQuote,setCurrentDate
@@ -20,6 +20,6 @@ import {
 
 
 setQuote(format(new Date(), 'eee'));
-setCurrentDate();
+setCurrentDate(format);
 generateHomepageContent();
-steve(parse,isPast);
+generateHomepageEvents(parse,isPast);
