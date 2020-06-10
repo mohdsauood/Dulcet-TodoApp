@@ -19,7 +19,12 @@ import {
 
 
 
+
 setQuote(format(new Date(), 'eee'));
 setCurrentDate(format);
 generateHomepageContent();
 generateHomepageEvents(parse,isPast);
+
+
+
+export{format,parse}

@@ -1,34 +1,17 @@
-
-
+import { checkError } from "./errorHandlers";
+import {format} from './index.js';
+const priorityElement=document.querySelector('#priority');
+const duedateElement=document.querySelector('#duedate');
+const hourElement=document.querySelector('#hour');
+const minuteElement=document.querySelector('#minute');
+const ampmElement=document.querySelector('#ampm');
 const titleElement=document.querySelector('#title');
 const descriptionElement=document.querySelector('#description');
 
-
-//import is working 
-// so clear the complexity and reduce the imports and passing the functions as parameteres except the datefns one as they require bundling and only be used my index js. cut and chop the rest of the parameters and provided access to everybody and make the code clean and use imports everywhere 
-// for now im learning data structures 
-// or create layout for desktop
-// or add logo man
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//create e createtask function that has check condition then create obj then set it in local storage,then call display
+//create a createtask function that has check condition then create obj then set it in local storage
 //set object in local storage
+//,then call display
+
 
 const checkTasksCondition=()=>{
     if(titleElement.value!=null ||descriptionElement.value!=null)
@@ -38,3 +21,37 @@ const checkTasksCondition=()=>{
     return false;
 }
 
+const taskFactory=(timeCreatedinMillis,{timeCreated,priority,duedate,duetime,title,descritpion})=>{
+
+    return{
+        timeCreatedinMillis:{
+                                timeCreated,
+                                priority,
+                                duedate,
+                                duetime,
+                                tiltle,
+                                descritpion
+                            },
+    }
+
+}
+const createTask=()=>{
+    if(checkTasksCondition)
+    {
+        let currentDate=format(new Date(),'T');
+        let timeCreated;
+        let timeCreatedinMillis=format(new Date(),)
+        currentDate=taskFactory(timeCreatedinMillis,{timeCreated:timeCreated,priority:priority,duedate:duedate,duetime:duetime,title:title,descritpion:descritpion})
+    }
+}
+
+// let march25={
+//     milliseconds:{
+//                     timeCreated:'time',
+//                     priority:'low',
+//                     duedate:'egegegege',
+//                     title:'sleeping',
+//                     descritpion:'etetetet',
+//                  },
+    
+// }

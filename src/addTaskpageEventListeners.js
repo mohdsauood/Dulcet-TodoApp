@@ -8,6 +8,7 @@ import {
     checkError
 } from './errorHandlers.js'
 
+
 const dateEventForAddTaskPage=(parse,isPast)=>{
     const dateElement=document.querySelector('#duedate');
     dateElement.addEventListener('input',(e)=>{
