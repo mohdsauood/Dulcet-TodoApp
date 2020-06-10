@@ -1,6 +1,4 @@
-import {
-    createTask
-} from './tasksFactory.js'
+
 
 const setError=(text)=>{
     const span=document.querySelector('#errorSpan');
@@ -12,7 +10,6 @@ const clearError=()=>{
 }
 
 const checkError=(event,parse,isPast)=>{
-    createTask();
     const dateElement=document.querySelector('#duedate');
     clearError();
     let dateValue=parse(dateElement.value,'yyyy-MM-dd',new Date());

@@ -7,6 +7,9 @@ import {
 import {
     checkError
 } from './errorHandlers.js'
+import {
+    createTask
+} from './tasksFactory.js'
 
 
 const dateEventForAddTaskPage=(parse,isPast)=>{
@@ -27,6 +30,7 @@ const backButtonEventForAddTaskPage=(parse,isPast)=>{
         checkError(e,parse,isPast);
         if( checkError(e,parse,isPast))
         {
+            createTask();
             generateHomepageContent();
             generateHomepageEvents();
         }

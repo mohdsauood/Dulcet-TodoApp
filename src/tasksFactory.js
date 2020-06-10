@@ -5,7 +5,9 @@ import {
     format,
     parse
 } from './index.js';
-
+import {
+    setToLocalStorage
+} from './localStorage.js'
 
 //create a createtask function that has check condition then create obj then set it in local storage
 //set object in local storage
@@ -42,6 +44,7 @@ const taskFactory = ({
 
 const createTask = () => {
     if (checkTasksCondition) {
+        const tasksObject = (localStorage.getItem('tasks') ? JSON.parse(localStorage.getItem('tasks')) : {});
         const priorityElement = document.querySelector('#priority');
         const duedateElement = document.querySelector('#duedate');
         const hourElement = document.querySelector('#hour');
@@ -61,40 +64,31 @@ const createTask = () => {
         let title = titleElement.value;
         let descritpion = descriptionElement.value;
 
-        // let testObj = {
-        //     currentDate,
-        //     timeCreatedinMillis,
-        //     timeCreated,
-        //     priority,
-        //     mainDueDate,
-        //     title,
-        //     descritpion
-        // }
-        // console.log(testObj);
-        const tasksObject = {};
-        tasksObject[currentDate]={};
-        tasksObject[currentDate][timeCreatedinMillis] = taskFactory({
-            timeCreated,
-            priority,
-            mainDueDate,
-            title,
-            descritpion
-        });
+        if(tasksObject[currentDate])
+        {
+            tasksObject[currentDate][timeCreatedinMillis] = taskFactory({
+                timeCreated,
+                priority,
+                mainDueDate,
+                title,
+                descritpion
+            });
+        }
+        else{
+            tasksObject[currentDate]={};
+            tasksObject[currentDate][timeCreatedinMillis] = taskFactory({
+                timeCreated,
+                priority,
+                mainDueDate,
+                title,
+                descritpion
+            });
+        }
+        
         console.log(tasksObject);
+        setToLocalStorage(tasksObject);
     }
 }
-
-// let mainObject={
-//  march25:{
-//     milliseconds:{
-//                     timeCreated:'time',
-//                     priority:'low',
-//                     duedate:'egegegege',
-//                     title:'sleeping',
-//                     descritpion:'etetetet',
-//                  },
-//          },
-// }
 
 export {
     createTask
