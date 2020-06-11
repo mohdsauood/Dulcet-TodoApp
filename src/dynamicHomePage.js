@@ -6,13 +6,16 @@ const displayTasks = (millis,title, dueDate, priority) => {
     let newSection=document.createElement('section');
     newSection.classList.add('task');
     newSection.dataset.mil=millis;
+    let circleColor=(priority=='No Rush')?'yellow':(priority=='Hurry Up')?'orange':(priority=='Very Urgent')?'red':'';
     newSection.innerHTML=`<div id="task">
     <p>${title}</p>
-    <p><i class="im im-circle-o"></i>
+    <p><i class="im im-circle-o ${circleColor}"></i>
     </p>
     <p>${dueDate}</p>
 
-    </div>`
+    </div>
+    <button><i class="im im-x-mark"></i>
+    </button>`
     mainTasksSection.appendChild(newSection);
 
 }
@@ -84,6 +87,10 @@ const generateHomepageContent = () => {
     </div>
     </section>
     <section class="tasks">
+    </section>
+    <section class="uiButtons">
+    <button id="addButton"> <i class="im im-plus"></i></button>
+    <button>clear list</button>
     </section>`;
         let TasksArr = tasksObject[currentDate];
         for (let [key, value] of Object.entries(TasksArr)) {
@@ -94,6 +101,7 @@ const generateHomepageContent = () => {
             let taskPriority = value['priority'];
             displayTasks(millis,taskTitle, taskDueDate, taskPriority);
         }
+
     }
 
 }
