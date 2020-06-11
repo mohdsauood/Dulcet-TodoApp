@@ -185,7 +185,7 @@ header span {
     padding: .2em .5em;
     margin: .5em 0;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 4fr,1fr);
     background-color: --var(--background);
     border: 2px solid rgb(85, 122, 221, 0.6);
     color: var(--primary);
@@ -219,7 +219,9 @@ header span {
 .im-x-mark {
     font-size: 18px;
 }
-
+.im-circle-o{
+    color:rgb(255,255,255,0.1);
+}
 .tasks {
     height: 40vh;
     overflow:scroll;
@@ -259,7 +261,18 @@ header span {
         -7px -7px 10px #ffffff;
 }
 
-
+.red{
+    color: var(--lightred);
+    background-color: rgba(255, 89, 89, 0.1);
+}
+.yellow{
+    background-color: rgb(255, 255, 152,0.1);
+    color:rgb(255, 255, 152)
+}
+.orange{
+    background-color: rgb(255, 202, 103,0.1);
+    color:rgb(255, 202, 103);
+}
 
 /*form page*/
 .backButton{
