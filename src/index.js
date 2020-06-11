@@ -27,4 +27,4 @@ generateHomepageEvents(parse,isPast);
 
 
 
-export{format,parse}
+export{format,parse,isPast}
