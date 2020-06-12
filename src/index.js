@@ -16,6 +16,7 @@ import {
 } from './quotesGenerator.js'
 
 // new issue when choosing old date then task doesnt get added
+//above issue is solved i guess
 //later add little cute animation
 //add feature when hovered over circle show the priority and its meaning
 //on clearlist make an absolute position middle of screen button , to confirm delete all ! if yes then delete all .
