@@ -11,6 +11,7 @@ import {
     deleteTaskFromLocalStorage
 } from './localStorage.js'
 import { generateHomepageContent } from './dynamicHomePage.js'
+import { generateViewTaskEvents } from './viewTaskPageEventListeners.js'
 
 const addButtonEvent = (parse,isPast) => {
     const addButton = document.querySelector('#addButton');
@@ -26,6 +27,7 @@ const viewTaskButtonEvent = () => {
         item.addEventListener('click', (e) => {
             let taskToShow=e.path[2].dataset.mil;
             generateViewTaskpageContent(taskToShow);
+            generateViewTaskEvents();
         });
     })
 }

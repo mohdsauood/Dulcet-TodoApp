@@ -5,8 +5,8 @@ const generateViewTaskpageContent = (millis) => {
     let task=tasksObj[currentDate][millis];
 
     const dynamicContent = document.querySelector('#dynamicContent');
-    dynamicContent.innerHTML = `<button id="AddTaskBack" class="backButton"><i class="im im-angle-left"></i></button>
-    <section class="viewingTask">
+    dynamicContent.innerHTML = `<button id="viewTaskBack" class="backButton"><i class="im im-angle-left"></i></button>
+    <section data-mil="${millis}" class="viewingTask">
         <p>${task.timeCreated}</p>
         <form>
             <input type="text" placeholder="title" id="title" value="${task.title}">

@@ -12,6 +12,15 @@ delete tasksObj[currentDate][taskInMillis];
 setToLocalStorage(tasksObj);
 }
 
+const updateLocalStorage=(millis,updatedTitle,updatedDescription)=>{
+    let tasksObj=JSON.parse(localStorage.getItem('tasks'));
+    let currentDate=format(new Date(), 'MMMMd');
+    let updatedTimeCreated=format(new Date(), 'h:mm a');
+    tasksObj[currentDate][millis].title=updatedTitle;
+    tasksObj[currentDate][millis].description=updatedDescription;
+    tasksObj[currentDate][millis].timeCreated=updatedTimeCreated;
+    setToLocalStorage(tasksObj);
+}
 
 
 
@@ -23,4 +32,5 @@ setToLocalStorage(tasksObj);
 
 
 
-export {setToLocalStorage,deleteTaskFromLocalStorage}
+
+export {setToLocalStorage,deleteTaskFromLocalStorage,updateLocalStorage}
