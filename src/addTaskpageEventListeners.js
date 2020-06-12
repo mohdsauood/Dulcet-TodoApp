@@ -11,24 +11,23 @@ import {
     createTask
 } from './tasksFactory.js'
 
-
-const dateEventForAddTaskPage=(parse,isPast)=>{
+const dateEventForAddTaskPage=()=>{
     const dateElement=document.querySelector('#duedate');
     dateElement.addEventListener('input',(e)=>{
-        checkError(e,parse,isPast);
+        checkError(e);
     });
     dateElement.addEventListener('keyup',(e)=>{
-        checkError(e,parse,isPast);
+        checkError(e);
     });
 }
 //if met objectCreation coniditions i.e either title or descirption not null
 // then pass values through factory function
 
-const backButtonEventForAddTaskPage=(parse,isPast)=>{
+const backButtonEventForAddTaskPage=()=>{
     const backButton=document.querySelector('#backButton');
     backButton.addEventListener('click',(e)=>{
-        checkError(e,parse,isPast);
-        if( checkError(e,parse,isPast))
+        checkError(e);
+        if( checkError(e))
         {
             createTask();
             generateHomepageContent();
@@ -37,9 +36,9 @@ const backButtonEventForAddTaskPage=(parse,isPast)=>{
     })
 }
 
-const generateAddTaskPageEvents=(parse,isPast)=>{
-    dateEventForAddTaskPage(parse,isPast);
-    backButtonEventForAddTaskPage(parse,isPast);
+const generateAddTaskPageEvents=()=>{
+    dateEventForAddTaskPage();
+    backButtonEventForAddTaskPage();
 }
 
 export {generateAddTaskPageEvents}

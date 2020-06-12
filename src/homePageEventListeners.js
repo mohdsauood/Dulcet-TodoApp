@@ -13,11 +13,12 @@ import {
 import { generateHomepageContent } from './dynamicHomePage.js'
 import { generateViewTaskEvents } from './viewTaskPageEventListeners.js'
 
-const addButtonEvent = (parse,isPast) => {
+
+const addButtonEvent = () => {
     const addButton = document.querySelector('#addButton');
     addButton.addEventListener('click', () => {
         generateAddTaskContent();
-        generateAddTaskPageEvents(parse,isPast);
+        generateAddTaskPageEvents();
     });
 }
 
@@ -50,8 +51,8 @@ const storageChangeEvent=()=>{
     });
 }
 
-const generateHomepageEvents = (parse,isPast)=>{
-    addButtonEvent(parse,isPast);
+const generateHomepageEvents = ()=>{
+    addButtonEvent();
     viewTaskButtonEvent();
     deleteTaskButtonEvent();
     storageChangeEvent();

@@ -1,3 +1,4 @@
+import {parse,isPast} from './index.js'
 
 const setError=(text)=>{
     const span=document.querySelector('#errorSpan');
@@ -9,7 +10,7 @@ const clearError=()=>{
     span.textContent="";
 }
 
-const checkError=(event,parse,isPast)=>{
+const checkError=(event)=>{
     const dateElement=document.querySelector('#duedate');
     clearError();
     let dateValue=parse(dateElement.value,'yyyy-MM-dd',new Date());
