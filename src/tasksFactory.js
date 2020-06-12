@@ -23,7 +23,7 @@ const taskFactory = ({
     priority,
     mainDueDate,
     title,
-    descritpion
+    description
 } = {}) => {
 
     return {
@@ -31,7 +31,7 @@ const taskFactory = ({
         priority,
         mainDueDate,
         title,
-        descritpion,
+        description,
         }
     }
 
@@ -55,9 +55,9 @@ const createTask = () => {
         let dueHour = hourElement.value;
         let dueMinute = minuteElement.value;
         let dueAmPm = ampmElement.value;
-        let mainDueDate = `${dueDate} ${dueHour} ${dueMinute} ${dueAmPm}`;
+        let mainDueDate = `${dueDate} ${dueHour}:${dueMinute} ${dueAmPm}`;
         let title = titleElement.value;
-        let descritpion = descriptionElement.value;
+        let description = descriptionElement.value;
 
         if(tasksObject[currentDate])
         {
@@ -66,7 +66,7 @@ const createTask = () => {
                 priority,
                 mainDueDate,
                 title,
-                descritpion
+                description
             });
         }
         else{
@@ -76,7 +76,7 @@ const createTask = () => {
                 priority,
                 mainDueDate,
                 title,
-                descritpion
+                description
             });
         }
         setToLocalStorage(tasksObject);

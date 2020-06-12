@@ -23,24 +23,23 @@ const addButtonEvent = (parse,isPast) => {
 const viewTaskButtonEvent = () => {
     const tasks = document.querySelectorAll('#task');
     tasks.forEach((item) => {
-        item.addEventListener('input', () => {
-            // generateViewTaskpageContent();
+        item.addEventListener('click', (e) => {
+            let taskToShow=e.path[2].dataset.mil;
+            generateViewTaskpageContent(taskToShow);
         });
     })
 }
 
-//handles both delete and view from event delegation
-const mainTaskSectionEvent =()=>{
-    const taskSection=document.querySelectorAll('.task');
-    taskSection.forEach((item)=>{
+const deleteTaskButtonEvent =()=>{
+    const deleteButtons=document.querySelectorAll('.task button');
+    deleteButtons.forEach((item)=>{
         item.addEventListener('click',(e)=>{
-            if(e.target.tagName=='BUTTON'){
-                const taskToDelete=e.path[1].dataset.mil;
+                let taskToDelete=e.path[1].dataset.mil;
                 deleteTaskFromLocalStorage(taskToDelete);
-           }
-        })
-    })
-}
+           });
+        });
+    }
+
 
 const storageChangeEvent=()=>{
     window.addEventListener('storage',()=>{
@@ -48,10 +47,11 @@ const storageChangeEvent=()=>{
         generateHomepageEvents();
     });
 }
+
 const generateHomepageEvents = (parse,isPast)=>{
     addButtonEvent(parse,isPast);
     viewTaskButtonEvent();
-    mainTaskSectionEvent();
+    deleteTaskButtonEvent();
     storageChangeEvent();
 }
 export {generateHomepageEvents}

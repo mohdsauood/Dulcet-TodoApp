@@ -345,12 +345,13 @@ form label,form span{
 .viewingTask form input,
 .viewingTask form textarea {
     margin: .1em 0;
-    padding: .1em .1em;
+    padding: .5em;
     border: none;
     background-color: var(--background);
 }
 .viewingTask form input{
     margin-bottom: 2vh;
+    
     color: var(--blue);
     font-size: 1.1em;
     font-weight: bold;
