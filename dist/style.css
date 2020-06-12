@@ -218,6 +218,7 @@ header span {
 
 .im-x-mark {
     font-size: 18px;
+    pointer-events:none;
 }
 .im-circle-o{
     color:rgb(255,255,255,0.1);

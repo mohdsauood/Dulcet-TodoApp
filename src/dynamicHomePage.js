@@ -114,3 +114,7 @@ const generateHomepageContent = () => {
 export {
     generateHomepageContent
 }
+
+//create a function called check if local storage exists 
+// if doesnt exsist then geenrate home page of default title duedate
+//title duedate

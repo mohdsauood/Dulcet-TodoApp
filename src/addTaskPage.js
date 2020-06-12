@@ -1,6 +1,6 @@
 const generateAddTaskContent = () => {
     const dynamicContent = document.querySelector('#dynamicContent');
-    dynamicContent.innerHTML = ` <form novalidate>
+    dynamicContent.innerHTML = ` <form novalidate >
     <button id="backButton" class="backButton"><i class="im im-angle-left"></i></button>
     <br>
     <label for="priority">Set a Priority</label>
