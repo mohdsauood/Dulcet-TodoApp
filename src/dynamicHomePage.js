@@ -24,11 +24,11 @@ const generateHomepageContent = () => {
     dynamicContent.innerHTML = `<section class="navButtons">
     <div>
         <button><i class="im im-calendar"></i></button>
-        <button>Previous Day</button>
+        <button>Yesterday</button>
     </div>
     <div>
         <button><i class="im im-calendar"></i></button>
-        <button>Next Day</button>
+        <button>Tomorrow</button>
     </div>
     </section>
     <section class="tasks">
@@ -79,11 +79,11 @@ const generateHomepageContent = () => {
         dynamicContent.innerHTML = `<section class="navButtons">
     <div>
         <button><i class="im im-calendar"></i></button>
-        <button>Previous Day</button>
+        <button>Yesterday</button>
     </div>
     <div>
         <button><i class="im im-calendar"></i></button>
-        <button>Next Day</button>
+        <button>Tomorrow</button>
     </div>
     </section>
     <section class="tasks">

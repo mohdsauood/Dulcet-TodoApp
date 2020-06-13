@@ -29,6 +29,7 @@ setQuote(format(new Date(), 'eee'));
 setCurrentDate(format);
 generateHomepageContent();
 generateHomepageEvents();
+// i can keep a default parameter value of newdate but when passed a date i'll pass it
 
 
 
