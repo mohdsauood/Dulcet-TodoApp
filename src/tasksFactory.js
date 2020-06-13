@@ -52,8 +52,9 @@ const createTask = () => {
         let dueDate = duedateElement.value;
         let dueHour = hourElement.value;
         let dueMinute = minuteElement.value;
+        dueMinute=(dueMinute=='')?'':`:${dueMinute}`;
         let dueAmPm = ampmElement.value;
-        let mainDueDate = `${dueDate} ${dueHour}:${dueMinute} ${dueAmPm}`;
+        let mainDueDate = `${dueDate} ${dueHour} ${dueMinute} ${dueAmPm}`;
         let title = titleElement.value;
         let description = descriptionElement.value;
 
