@@ -3,7 +3,7 @@ import {
     lightFormat,
     format,
     parse,
-    isPast
+    isPast,isTomorrow
 } from 'date-fns'
 import {
     generateHomepageContent
@@ -23,6 +23,7 @@ import {
 //see wordpress or shopify tuts to create a food order app
 //somehow make the maindue date into march 1st 2nd etc
 //fix the logo
+//i'll try cleaning stuffs
 
 setQuote(format(new Date(), 'eee'));
 setCurrentDate(format);
@@ -31,4 +32,4 @@ generateHomepageEvents();
 
 
 
-export{format,parse,isPast}
+export{format,parse,isPast,isTomorrow}

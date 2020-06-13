@@ -1,7 +1,8 @@
 
 import {
     format,
-    parse
+    parse,
+    isTomorrow
 } from './index.js';
 import {
     setToLocalStorage
@@ -33,6 +34,20 @@ const taskFactory = ({
         }
     }
 
+const doSomethingWithTime=(dueDate,dueHour,dueMinute,dueAmPm)=>{
+    let dueDateArr=dueDate.split('-');
+    let testHour=(dueAmPm=='PM'&&dueHour!=12)?dueHour+12:dueHour;
+    console.log(`${dueDateArr[0]} ${dueDateArr[1]-1} ${dueDateArr[2]} ${dueMinute}`)
+    console.log('new date below');
+    console.log(new Date(dueDateArr[0],dueDateArr[1]-1,dueDateArr[2],testHour,dueMinute));
+    if(isTomorrow(new Date(dueDateArr[0],dueDateArr[1]-1,dueDateArr[2],testHour,dueMinute)))
+    {
+        return `Tomorrow ${dueHour}:${dueMinute} ${dueAmPm}`;
+    }
+    let testDate=format(new Date(dueDateArr[0],dueDateArr[1]-1,dueDateArr[2],testHour,dueMinute),'MMMMdo h:mm a');
+    return testDate;
+    
+}
 
 
 const createTask = () => {
@@ -52,12 +67,12 @@ const createTask = () => {
         let dueDate = duedateElement.value;
         let dueHour = hourElement.value;
         let dueMinute = minuteElement.value;
-        dueMinute=(dueMinute=='')?'':`:${dueMinute}`;
+        // dueMinute=(dueMinute=='')?'':`:${dueMinute}`;
         let dueAmPm = ampmElement.value;
-        let mainDueDate = `${dueDate} ${dueHour} ${dueMinute} ${dueAmPm}`;
+        // let mainDueDate = `${dueDate} ${dueHour} ${dueMinute} ${dueAmPm}`;
+        let mainDueDate=doSomethingWithTime(dueDate,dueHour,dueMinute,dueAmPm);
         let title = titleElement.value;
         let description = descriptionElement.value;
-
         if(tasksObject[currentDate])
         {
             tasksObject[currentDate][timeCreatedinMillis] = taskFactory({
