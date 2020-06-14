@@ -78,11 +78,11 @@ const generateHomepageContent = (presentDate=format(new Date(), 'MMMMd')) => {
         dynamicContent.innerHTML = `<section class="navButtons">
     <div>
         <button><i class="im im-calendar"></i></button>
-        <button>Yesterday</button>
+        <button id="yesterday">Yesterday</button>
     </div>
     <div>
         <button><i class="im im-calendar"></i></button>
-        <button>Tomorrow</button>
+        <button id="tomorrow">Tomorrow</button>
     </div>
     </section>
     <section class="tasks">

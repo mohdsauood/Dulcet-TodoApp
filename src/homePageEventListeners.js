@@ -10,6 +10,9 @@ import {
 import {
     deleteTaskFromLocalStorage
 } from './localStorage.js'
+import {
+    sub,format
+} from './index.js'
 import { generateHomepageContent } from './dynamicHomePage.js'
 import { generateViewTaskEvents } from './viewTaskPageEventListeners.js'
 
@@ -32,10 +35,19 @@ const viewTaskButtonEvent = () => {
         });
     })
 }
-// const yesterDayEvent= ()=>{
-//     let yesterdayButton=document.querySelector('#yesterday');
+const yesterDayEvent= ()=>{
+    let yesterdayButton=document.querySelector('#yesterday');
+    yesterdayButton.addEventListener('click',(e)=>{
+        let newDatetest=sub(new Date(),{
+            days:1,
+        });
+        let newDateFullFormat=format(newDatetest,'do MMMM yyy');
+        let newDate=format(newDatetest,'MMMMd');
+        console.log(`newDate fullformat : ${newDateFullFormat}`);
+        console.log(`newDate : ${newDate}`);
+    })
 
-// }
+}
 const deleteTaskButtonEvent =()=>{
     const deleteButtons=document.querySelectorAll('.task button');
     deleteButtons.forEach((item)=>{
@@ -59,5 +71,6 @@ const generateHomepageEvents = ()=>{
     viewTaskButtonEvent();
     deleteTaskButtonEvent();
     storageChangeEvent();
+    yesterDayEvent();
 }
 export {generateHomepageEvents}
