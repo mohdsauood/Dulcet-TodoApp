@@ -34,18 +34,16 @@ const setPresentFullDate=(p1=format(new Date(), 'do MMMM yyy'))=>{
 //on clearlist make an absolute position middle of screen button , to confirm delete all ! if yes then delete all .
 //fix the logo
 //i'll try cleaning stuffs
-//bydefault presentDate is Today
 //viewtask only works on title and duedate not when clicked on other parts of div
+//add one go to date option so user can jump to that date 
+//fix css tomorrow and add hover animation for priority
+//put slight arrow icon on click let it spread across and show go to date option
 setPresentDate();
 setPresentFullDate();
 setQuote();
 setDisplayDate();
 generateHomepageContent();
 generateHomepageEvents();
-// i can keep a default parameter value of newdate but when passed a date i'll pass it
-//i'll have to change the date dynamically too
-//and handle previous and next day 
-//no matter what the day is previous or next just update all with the current date simple
 //write a guide on date fns
 
 export {
