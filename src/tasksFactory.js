@@ -37,16 +37,18 @@ const taskFactory = ({
 const doSomethingWithTime=(dueDate,dueHour,dueMinute,dueAmPm)=>{
     let dueDateArr=dueDate.split('-');
     let testHour=(dueAmPm=='PM'&&dueHour!=12)?dueHour+12:dueHour;
-    
-    if(isTomorrow(new Date(dueDateArr[0],dueDateArr[1]-1,dueDateArr[2],testHour,dueMinute)))
-    {
-        return `Tomorrow ${dueHour}:${dueMinute} ${dueAmPm}`;
-    }
-    else if(dueDate==null)
+    if(dueDate==''||(dueDate==''&&(dueHour!=''||dueMinute!='')))
     {
         return ``;
     }
-
+    else if(dueDate!=''&&(dueHour==''||dueMinute==''))
+    {
+        return format(new Date(dueDateArr[0],dueDateArr[1]-1,dueDateArr[2]),'MMMMdo')
+    }
+    else if(isTomorrow(new Date(dueDateArr[0],dueDateArr[1]-1,dueDateArr[2],testHour,dueMinute)))
+    {
+        return `Tomorrow ${dueHour}:${dueMinute} ${dueAmPm}`;
+    }
     let testDate=format(new Date(dueDateArr[0],dueDateArr[1]-1,dueDateArr[2],testHour,dueMinute),'MMMMdo h:mm a');
     return testDate;
     
