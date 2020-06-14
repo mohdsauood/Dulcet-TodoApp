@@ -1,6 +1,6 @@
 // datefns library
 import {
-    lightFormat,
+    isToday,
     format,
     parse,
     isPast,isTomorrow
@@ -24,6 +24,7 @@ import {
 //somehow make the maindue date into march 1st 2nd etc
 //fix the logo
 //i'll try cleaning stuffs
+//new problem cant set tasks for same day
 
 setQuote(format(new Date(), 'eee'));
 setCurrentDate(format);
@@ -36,4 +37,4 @@ generateHomepageEvents();
 // when time and date is empty let user submit task
 
 
-export{format,parse,isPast,isTomorrow}
+export{format,parse,isPast,isTomorrow,isToday}
