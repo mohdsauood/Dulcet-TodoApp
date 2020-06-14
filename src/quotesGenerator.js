@@ -41,10 +41,10 @@ const setQuote=(day=format(new Date(), 'eee'))=>{
     const authorElement=document.querySelector('.quoteAuthor');
     authorElement.textContent=`-${author}`
 }
-const setCurrentDate = () => {
+const setDisplayDate = () => {
     const dateElement = document.querySelector('#homePageDate');
     dateElement.textContent = presentFullDate;
 }
 
-export {setQuote,setCurrentDate}
+export {setQuote,setDisplayDate}
 

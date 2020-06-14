@@ -6,6 +6,7 @@ import {
     isPast,
     isTomorrow,
     sub,
+    add,
 } from 'date-fns'
 import {
     generateHomepageContent
@@ -15,12 +16,19 @@ import {
 } from './homePageEventListeners.js'
 import {
     setQuote,
-    setCurrentDate
+    setDisplayDate
 } from './quotesGenerator.js';
 
-let presentDate=format(new Date(), 'MMMMd');
-let presentFullDate=format(new Date(), 'do MMMM yyy');
+let presentDate;
+let presentFullDate;
 
+
+const setPresentDate=(p1=format(new Date(), 'MMMMd'))=>{
+    presentDate=p1;
+}
+const setPresentFullDate=(p1=format(new Date(), 'do MMMM yyy'))=>{
+    presentFullDate=p1;
+}
 //later add little cute animation
 //add feature when hovered over circle show the priority and its meaning
 //on clearlist make an absolute position middle of screen button , to confirm delete all ! if yes then delete all .
@@ -28,8 +36,10 @@ let presentFullDate=format(new Date(), 'do MMMM yyy');
 //i'll try cleaning stuffs
 //bydefault presentDate is Today
 //viewtask only works on title and duedate not when clicked on other parts of div
+setPresentDate();
+setPresentFullDate();
 setQuote();
-setCurrentDate();
+setDisplayDate();
 generateHomepageContent();
 generateHomepageEvents();
 // i can keep a default parameter value of newdate but when passed a date i'll pass it
@@ -47,4 +57,7 @@ export {
     sub,
     presentDate,
     presentFullDate,
+    setPresentDate,
+    setPresentFullDate,
+    add
 }
