@@ -30,7 +30,10 @@ setCurrentDate(format);
 generateHomepageContent();
 generateHomepageEvents();
 // i can keep a default parameter value of newdate but when passed a date i'll pass it
-
+//i'll have to change the date dynamically too
+//and handle previous and next day 
+//no matter what the day is previous or next just update all with the current date simple
+// when time and date is empty let user submit task
 
 
 export{format,parse,isPast,isTomorrow}
