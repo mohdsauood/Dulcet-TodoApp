@@ -1,5 +1,5 @@
-import {format} from './index.js';
-const generateViewTaskpageContent = (millis,presentDate=format(new Date(), 'MMMMd')) => {
+import {format,presentDate} from './index.js';
+const generateViewTaskpageContent = (millis) => {
     let tasksObj=JSON.parse(localStorage.getItem('tasks'));
     let task=tasksObj[presentDate][millis];
 

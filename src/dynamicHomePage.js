@@ -1,5 +1,5 @@
 import {
-    format
+    format,presentDate
 } from './index.js'
 const displayTasks = (millis,title, dueDate, priority) => {
     let mainTasksSection = document.querySelector('.tasks');
@@ -19,7 +19,7 @@ const displayTasks = (millis,title, dueDate, priority) => {
     mainTasksSection.appendChild(newSection);
 
 }
-const generateHomepageContent = (presentDate=format(new Date(), 'MMMMd')) => {
+const generateHomepageContent = () => {
     const dynamicContent = document.querySelector('#dynamicContent');
     dynamicContent.innerHTML = `<section class="navButtons">
     <div>

@@ -2,7 +2,7 @@
 import {
     format,
     parse,
-    isTomorrow
+    isTomorrow,presentDate
 } from './index.js';
 import {
     setToLocalStorage
@@ -54,7 +54,7 @@ const doSomethingWithTime=(dueDate,dueHour,dueMinute,dueAmPm)=>{
 }
 
 
-const createTask = (presentDate= format(new Date(), 'MMMMd')) => {
+const createTask = () => {
     if (checkTasksCondition()) {
         const tasksObject = (localStorage.getItem('tasks') ? JSON.parse(localStorage.getItem('tasks')) : {});
         const priorityElement = document.querySelector('#priority');

@@ -41,12 +41,11 @@ const yesterDayEvent= ()=>{
         let newDatetest=sub(new Date(),{
             days:1,
         });
-        let newDateFullFormat=format(newDatetest,'do MMMM yyy');
-        let newDate=format(newDatetest,'MMMMd');
-        console.log(`newDate fullformat : ${newDateFullFormat}`);
-        console.log(`newDate : ${newDate}`);
+        // let newDateFullFormat=format(newDatetest,'do MMMM yyy');
+        // let newDate=format(newDatetest,'MMMMd');
+        // console.log(`newDate fullformat : ${newDateFullFormat}`);
+        // console.log(`newDate : ${newDate}`);
     })
-
 }
 const deleteTaskButtonEvent =()=>{
     const deleteButtons=document.querySelectorAll('.task button');
@@ -71,6 +70,6 @@ const generateHomepageEvents = ()=>{
     viewTaskButtonEvent();
     deleteTaskButtonEvent();
     storageChangeEvent();
-    yesterDayEvent();
+    // yesterDayEvent();
 }
 export {generateHomepageEvents}

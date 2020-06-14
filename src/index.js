@@ -16,7 +16,10 @@ import {
 import {
     setQuote,
     setCurrentDate
-} from './quotesGenerator.js'
+} from './quotesGenerator.js';
+
+let presentDate=format(new Date(), 'MMMMd');
+let presentFullDate=format(new Date(), 'do MMMM yyy');
 
 //later add little cute animation
 //add feature when hovered over circle show the priority and its meaning
@@ -41,5 +44,7 @@ export {
     isPast,
     isTomorrow,
     isToday,
-    sub
+    sub,
+    presentDate,
+    presentFullDate,
 }

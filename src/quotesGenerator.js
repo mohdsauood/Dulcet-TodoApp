@@ -1,4 +1,4 @@
-import {format} from './index.js'
+import {format,presentFullDate} from './index.js'
 
 const quotesObj={
     Mon:{
@@ -41,9 +41,9 @@ const setQuote=(day=format(new Date(), 'eee'))=>{
     const authorElement=document.querySelector('.quoteAuthor');
     authorElement.textContent=`-${author}`
 }
-const setCurrentDate = (presentDate=format(new Date(), 'do MMMM yyy')) => {
+const setCurrentDate = () => {
     const dateElement = document.querySelector('#homePageDate');
-    dateElement.textContent = presentDate;
+    dateElement.textContent = presentFullDate;
 }
 
 export {setQuote,setCurrentDate}

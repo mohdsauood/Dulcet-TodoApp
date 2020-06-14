@@ -1,5 +1,5 @@
 import {
-    format
+    format,presentDate
 } from './index.js';
 const setToLocalStorage = (obj) => {
     localStorage.setItem('tasks', JSON.stringify(obj));
@@ -7,13 +7,13 @@ const setToLocalStorage = (obj) => {
     window.dispatchEvent(new Event('storage'));
 }
 
-const deleteTaskFromLocalStorage = (taskInMillis,presentDate= format(new Date(), 'MMMMd')) => {
+const deleteTaskFromLocalStorage = (taskInMillis) => {
     let tasksObj = JSON.parse(localStorage.getItem('tasks'));
     delete tasksObj[presentDate][taskInMillis];
     setToLocalStorage(tasksObj);
 }
 
-const updateLocalStorage = (millis, updatedTitle, updatedDescription,presentDate= format(new Date(), 'MMMMd')) => {
+const updateLocalStorage = (millis, updatedTitle, updatedDescription) => {
     let tasksObj = JSON.parse(localStorage.getItem('tasks'));
     let updatedTimeCreated = format(new Date(), 'h:mm a');
     tasksObj[presentDate][millis].title = updatedTitle;
