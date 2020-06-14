@@ -19,16 +19,16 @@ const displayTasks = (millis,title, dueDate, priority) => {
     mainTasksSection.appendChild(newSection);
 
 }
-const generateHomepageContent = () => {
+const generateHomepageContent = (presentDate=format(new Date(), 'MMMMd')) => {
     const dynamicContent = document.querySelector('#dynamicContent');
     dynamicContent.innerHTML = `<section class="navButtons">
     <div>
         <button><i class="im im-calendar"></i></button>
-        <button>Yesterday</button>
+        <button id="yesterday">Yesterday</button>
     </div>
     <div>
         <button><i class="im im-calendar"></i></button>
-        <button>Tomorrow</button>
+        <button id="tomorrow">Tomorrow</button>
     </div>
     </section>
     <section class="tasks">
@@ -72,8 +72,7 @@ const generateHomepageContent = () => {
     <button>clear list</button>
     </section>`;
     const tasksObject = (localStorage.getItem('tasks') ? JSON.parse(localStorage.getItem('tasks')) : {});
-    const currentDate = format(new Date(), 'MMMMd');
-    if (tasksObject[currentDate]) {
+    if (tasksObject[presentDate]) {
         const dynamicContent = document.querySelector('#dynamicContent');
         dynamicContent.innerHTML = '';
         dynamicContent.innerHTML = `<section class="navButtons">
@@ -92,7 +91,7 @@ const generateHomepageContent = () => {
     <button id="addButton"> <i class="im im-plus"></i></button>
     <button>clear list</button>
     </section>`;
-        let TasksArr = tasksObject[currentDate];
+        let TasksArr = tasksObject[presentDate];
         for (let [key, value] of Object.entries(TasksArr)) {
             let millis = key;
             let taskObj = value;

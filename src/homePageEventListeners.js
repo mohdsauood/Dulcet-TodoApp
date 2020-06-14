@@ -32,7 +32,10 @@ const viewTaskButtonEvent = () => {
         });
     })
 }
+// const yesterDayEvent= ()=>{
+//     let yesterdayButton=document.querySelector('#yesterday');
 
+// }
 const deleteTaskButtonEvent =()=>{
     const deleteButtons=document.querySelectorAll('.task button');
     deleteButtons.forEach((item)=>{

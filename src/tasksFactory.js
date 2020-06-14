@@ -51,11 +51,10 @@ const doSomethingWithTime=(dueDate,dueHour,dueMinute,dueAmPm)=>{
     }
     let testDate=format(new Date(dueDateArr[0],dueDateArr[1]-1,dueDateArr[2],testHour,dueMinute),'MMMMdo h:mm a');
     return testDate;
-    
 }
 
 
-const createTask = () => {
+const createTask = (presentDate= format(new Date(), 'MMMMd')) => {
     if (checkTasksCondition()) {
         const tasksObject = (localStorage.getItem('tasks') ? JSON.parse(localStorage.getItem('tasks')) : {});
         const priorityElement = document.querySelector('#priority');
@@ -65,7 +64,6 @@ const createTask = () => {
         const ampmElement = document.querySelector('#ampm');
         const titleElement = document.querySelector('#title');
         const descriptionElement = document.querySelector('#description');
-        let currentDate = format(new Date(), 'MMMMd');
         let timeCreatedinMillis = format(new Date(), 'T');
         let timeCreated = format(new Date(), 'h:mm a');
         let priority = priorityElement.value;
@@ -78,9 +76,9 @@ const createTask = () => {
         let mainDueDate=doSomethingWithTime(dueDate,dueHour,dueMinute,dueAmPm);
         let title = titleElement.value;
         let description = descriptionElement.value;
-        if(tasksObject[currentDate])
+        if(tasksObject[presentDate])
         {
-            tasksObject[currentDate][timeCreatedinMillis] = taskFactory({
+            tasksObject[presentDate][timeCreatedinMillis] = taskFactory({
                 timeCreated,
                 priority,
                 mainDueDate,
@@ -89,8 +87,8 @@ const createTask = () => {
             });
         }
         else{
-            tasksObject[currentDate]={};
-            tasksObject[currentDate][timeCreatedinMillis] = taskFactory({
+            tasksObject[presentDate]={};
+            tasksObject[presentDate][timeCreatedinMillis] = taskFactory({
                 timeCreated,
                 priority,
                 mainDueDate,

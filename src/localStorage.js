@@ -7,20 +7,18 @@ const setToLocalStorage = (obj) => {
     window.dispatchEvent(new Event('storage'));
 }
 
-const deleteTaskFromLocalStorage = (taskInMillis) => {
+const deleteTaskFromLocalStorage = (taskInMillis,presentDate= format(new Date(), 'MMMMd')) => {
     let tasksObj = JSON.parse(localStorage.getItem('tasks'));
-    let currentDate = format(new Date(), 'MMMMd');
-    delete tasksObj[currentDate][taskInMillis];
+    delete tasksObj[presentDate][taskInMillis];
     setToLocalStorage(tasksObj);
 }
 
-const updateLocalStorage = (millis, updatedTitle, updatedDescription) => {
+const updateLocalStorage = (millis, updatedTitle, updatedDescription,presentDate= format(new Date(), 'MMMMd')) => {
     let tasksObj = JSON.parse(localStorage.getItem('tasks'));
-    let currentDate = format(new Date(), 'MMMMd');
     let updatedTimeCreated = format(new Date(), 'h:mm a');
-    tasksObj[currentDate][millis].title = updatedTitle;
-    tasksObj[currentDate][millis].description = updatedDescription;
-    tasksObj[currentDate][millis].timeCreated = updatedTimeCreated;
+    tasksObj[presentDate][millis].title = updatedTitle;
+    tasksObj[presentDate][millis].description = updatedDescription;
+    tasksObj[presentDate][millis].timeCreated = updatedTimeCreated;
     setToLocalStorage(tasksObj);
 }
 

@@ -24,9 +24,10 @@ import {
 //somehow make the maindue date into march 1st 2nd etc
 //fix the logo
 //i'll try cleaning stuffs
-
-setQuote(format(new Date(), 'eee'));
-setCurrentDate(format);
+//bydefault presentDate is Today
+//viewtask only works on title and duedate not when clicked on other parts of div
+setQuote();
+setCurrentDate();
 generateHomepageContent();
 generateHomepageEvents();
 // i can keep a default parameter value of newdate but when passed a date i'll pass it

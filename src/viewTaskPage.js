@@ -1,8 +1,7 @@
 import {format} from './index.js';
-const generateViewTaskpageContent = (millis) => {
+const generateViewTaskpageContent = (millis,presentDate=format(new Date(), 'MMMMd')) => {
     let tasksObj=JSON.parse(localStorage.getItem('tasks'));
-    let currentDate=format(new Date(), 'MMMMd');
-    let task=tasksObj[currentDate][millis];
+    let task=tasksObj[presentDate][millis];
 
     const dynamicContent = document.querySelector('#dynamicContent');
     dynamicContent.innerHTML = `<button id="viewTaskBack" class="backButton"><i class="im im-angle-left"></i></button>

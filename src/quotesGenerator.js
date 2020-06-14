@@ -1,3 +1,4 @@
+import {format} from './index.js'
 
 const quotesObj={
     Mon:{
@@ -30,7 +31,7 @@ const quotesObj={
     },
 }
 
-const setQuote=(day)=>{
+const setQuote=(day=format(new Date(), 'eee'))=>{
     const quote=quotesObj[day].quote;
     const author=quotesObj[day].author;
 
@@ -40,9 +41,9 @@ const setQuote=(day)=>{
     const authorElement=document.querySelector('.quoteAuthor');
     authorElement.textContent=`-${author}`
 }
-const setCurrentDate = (format) => {
+const setCurrentDate = (presentDate=format(new Date(), 'do MMMM yyy')) => {
     const dateElement = document.querySelector('#homePageDate');
-    dateElement.textContent = format(new Date(), 'do MMMM yyy');
+    dateElement.textContent = presentDate;
 }
 
 export {setQuote,setCurrentDate}
