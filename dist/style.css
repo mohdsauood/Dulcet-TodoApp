@@ -104,11 +104,12 @@ header {
 .deletePopUp button{
     padding: .1em .5em;
     margin: 0 1em;
-    font-size: 1.5em;
+    font-size: 1.7em;
     background-color: var(--background);
     color: var(--primary);
     border-radius: 10px;
     width: 30vw;
+    height: 7vh;
 }
 .deletePopUp p{
     color: white;
@@ -118,6 +119,15 @@ header {
 }
 .displayPopUp{
     display: flex;
+}
+#yes
+{
+    color: white;
+    background-color: var(--blue);
+}
+#no{
+    color: white;
+    background-color: var(--lightred);
 }
 body {
     overflow-y: hidden;
@@ -330,6 +340,9 @@ header span {
 .orange{
     background-color: rgb(255, 202, 103,0.1);
     color:rgb(255, 202, 103);
+}
+.blue{
+    color: var(--blue);
 }
 
 /*form page*/
