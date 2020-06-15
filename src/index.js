@@ -31,7 +31,6 @@ const setPresentFullDate=(p1=format(new Date(), 'do MMMM yyy'))=>{
 }
 //later add little cute animation
 //add feature when hovered over circle show the priority and its meaning
-//on clearlist make an absolute position middle of screen button , to confirm delete all ! if yes then delete all .
 //fix the logo
 //i'll try cleaning stuffs
 //viewtask only works on title and duedate not when clicked on other parts of div
