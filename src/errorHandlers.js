@@ -18,7 +18,7 @@ const checkError=(event)=>{
     if(isPast(dateValue)&&!isToday(new Date(dateArr[0],dateArr[1]-1,dateArr[2])))
     {
         event.preventDefault();
-        setError('Due date already passed ,set new date');
+        setError('Due date already passed set new date');
         return false;
     }
     return true;
