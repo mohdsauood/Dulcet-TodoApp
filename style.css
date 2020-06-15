@@ -155,24 +155,46 @@ header span {
     background-color: var(--background);
     color: var(--primary);
     border-radius: 10px;
-
-}
-
-.navButtons div :nth-child(1) {
-    align-self: baseline;
-    color: var(--primary);
+    box-shadow: 7px 7px 10px #cbced1, -7px -7px 10px #ffffff;
 }
 
 .im-calendar {
     border: none;
+    color: var(--primary);
     font-size: 1.1em;
+    margin-right: .2em;
 }
 
 .navButtons div :nth-child(2) {
     box-shadow: 7px 7px 10px #cbced1,
         -7px -7px 10px #ffffff;
 }
-
+.im-menu-dot-h{
+    font-size:20;
+    color:var(--primary);
+    margin:0 .5em ;
+}
+.goToDate span{
+    color: var(--primary);
+}
+.goToDate input[type="date"] {
+    width: 30vw;
+    font-size: .7em;
+    background-color: var(--background);
+    border: none;
+    border-radius: 10px;
+    box-shadow: 7px 7px 10px #cbced1, -7px -7px 10px #ffffff;
+    color: var(--primary);
+}
+.goToDate span,.goToDate input[type="date"]{
+    padding: .3em;
+    margin-bottom: 1em;
+    display: none;
+}
+.homeDate
+{
+    display:inline !important;
+}
 .task {
     display: flex;
     flex-direction: row;
