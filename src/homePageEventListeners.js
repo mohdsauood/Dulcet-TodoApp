@@ -71,8 +71,6 @@ const tomorrowEvent = () => {
         });
         setPresentDate(format(newDatetest, 'MMMMd'));
         setPresentFullDate(format(newDatetest, 'do MMMM yyy'));
-        console.log(`${format(newDatetest,'MMMMd')} is the updated Date`);
-        console.log(`${format(newDatetest,'do MMMM yyy')} is the updated FullDate`);
         window.dispatchEvent(new Event('storage'));
         
     });
@@ -86,8 +84,26 @@ const deleteTaskButtonEvent = () => {
         });
     });
 }
-
-
+const jumpDateEvent=()=>{
+    let jumpButton=document.querySelector('#jumpDate');
+    jumpButton.addEventListener('change',(e)=>{
+        let jumpDate=parse(jumpButton.value, 'yyyy-MM-dd', new Date());
+        setPresentDate(format(jumpDate, 'MMMMd'));
+        setPresentFullDate(format(jumpDate, 'do MMMM yyy'));
+        window.dispatchEvent(new Event('storage'));
+    })
+}
+const homeDateButtonEvent = ()=>{
+    
+    const menuButton=document.querySelector('.im-menu-dot-h');
+    menuButton.addEventListener('click',(e)=>{
+        let span=document.querySelector('.goToDate span');   
+        let inputDate=document.querySelector('.goToDate input[type="date"]');
+        span.classList.toggle('homeDate');
+        inputDate.classList.toggle('homeDate');
+        jumpDateEvent();
+    });
+}
 const storageChangeEvent = () => {
     window.addEventListener('storage', () => {
         generateHomepageContent();
@@ -103,6 +119,7 @@ const generateHomepageEvents = () => {
     storageChangeEvent();
     yesterDayEvent();
     tomorrowEvent();
+    homeDateButtonEvent();
 }
 export {
     generateHomepageEvents

@@ -21,14 +21,18 @@ const displayTasks = (millis,title, dueDate, priority) => {
 }
 const generateHomepageContent = () => {
     const dynamicContent = document.querySelector('#dynamicContent');
-    dynamicContent.innerHTML = `<section class="navButtons">
+    dynamicContent.innerHTML = `
+    <section class="goToDate">
+    <i class="im im-menu-dot-h"></i>
+    <input id="jumpDate" type="date" >
+    <span>Go To Date</span>
+    </section>
+    <section class="navButtons">
     <div>
-        <button><i class="im im-calendar"></i></button>
-        <button id="yesterday">Yesterday</button>
+        <button id="yesterday"><i class="im im-calendar"></i>Yesterday</button>
     </div>
     <div>
-        <button><i class="im im-calendar"></i></button>
-        <button id="tomorrow">Tomorrow</button>
+        <button id="tomorrow"><i class="im im-calendar"></i>Tomorrow</button>
     </div>
     </section>
     <section class="tasks">
@@ -75,14 +79,18 @@ const generateHomepageContent = () => {
     if (tasksObject[presentDate]) {
         const dynamicContent = document.querySelector('#dynamicContent');
         dynamicContent.innerHTML = '';
-        dynamicContent.innerHTML = `<section class="navButtons">
+        dynamicContent.innerHTML = `
+        <section class="goToDate">
+    <i class="im im-menu-dot-h"></i>
+    <input id="jumpDate" type="date" >
+    <span>Go To Date</span>
+    </section>
+    <section class="navButtons">
     <div>
-        <button><i class="im im-calendar"></i></button>
-        <button id="yesterday">Yesterday</button>
+        <button id="yesterday"><i class="im im-calendar"></i>Yesterday</button>
     </div>
     <div>
-        <button><i class="im im-calendar"></i></button>
-        <button id="tomorrow">Tomorrow</button>
+        <button id="tomorrow"><i class="im im-calendar"></i>Tomorrow</button>
     </div>
     </section>
     <section class="tasks">
