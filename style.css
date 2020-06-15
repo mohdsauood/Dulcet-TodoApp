@@ -84,6 +84,9 @@ header {
 } */
 
 /*misc styles*/
+header figure img{
+    width: 60%;
+}
 .deletePopUp
 {
     z-index: 2;
@@ -153,7 +156,7 @@ header h2:nth-child(1) {
 }
 
 header h2:nth-child(2) {
-    margin-top: 1em;
+    margin-top: .5em;
     font-size: 1em;
 }
 
