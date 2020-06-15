@@ -8,7 +8,7 @@ import {
     generateViewTaskpageContent
 } from './viewTaskPage.js'
 import {
-    deleteTaskFromLocalStorage
+    deleteTaskFromLocalStorage,deleteThisDateObj
 } from './localStorage.js'
 import {
     sub,
@@ -104,6 +104,27 @@ const homeDateButtonEvent = ()=>{
         jumpDateEvent();
     });
 }
+const popUpButtonsEvent = ()=>{
+    let yesButton=document.querySelector('#yes');
+    let noButton=document.querySelector('#no');
+    yesButton.addEventListener('click',()=>{
+        let popUp=document.querySelector('.deletePopUp');
+        popUp.classList.remove('displayPopUp');
+        deleteThisDateObj();
+    })
+    noButton.addEventListener('click',()=>{
+        let popUp=document.querySelector('.deletePopUp');
+        popUp.classList.remove('displayPopUp');
+    })
+}
+const clearButtonEvent=()=>{
+    let clearButton=document.querySelector('#clear');
+    clearButton.addEventListener('click',()=>{
+        let popUp=document.querySelector('.deletePopUp');
+        popUp.classList.add('displayPopUp');
+        popUpButtonsEvent();
+    })
+}
 const storageChangeEvent = () => {
     window.addEventListener('storage', () => {
         generateHomepageContent();
@@ -120,6 +141,7 @@ const generateHomepageEvents = () => {
     yesterDayEvent();
     tomorrowEvent();
     homeDateButtonEvent();
+    clearButtonEvent();
 }
 export {
     generateHomepageEvents

@@ -69,11 +69,10 @@ const generateHomepageContent = () => {
         <button><i class="im im-x-mark"></i>
         </button>
     </section>
-   
     </section>
     <section class="uiButtons">
     <button id="addButton"> <i class="im im-plus"></i></button>
-    <button>clear list</button>
+    <button id="clear">clear All</button>
     </section>`;
     const tasksObject = (localStorage.getItem('tasks') ? JSON.parse(localStorage.getItem('tasks')) : {});
     if (tasksObject[presentDate]) {
@@ -97,7 +96,7 @@ const generateHomepageContent = () => {
     </section>
     <section class="uiButtons">
     <button id="addButton"> <i class="im im-plus"></i></button>
-    <button>clear list</button>
+    <button id="clear">clear All</button>
     </section>`;
         let TasksArr = tasksObject[presentDate];
         for (let [key, value] of Object.entries(TasksArr)) {

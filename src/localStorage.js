@@ -23,7 +23,11 @@ const updateLocalStorage = (millis, updatedTitle, updatedDescription) => {
 }
 
 
-
+const deleteThisDateObj = ()=>{
+    let tasksObj = JSON.parse(localStorage.getItem('tasks'));
+    delete tasksObj[presentDate];
+    setToLocalStorage(tasksObj);
+}
 
 
 
@@ -36,5 +40,6 @@ const updateLocalStorage = (millis, updatedTitle, updatedDescription) => {
 export {
     setToLocalStorage,
     deleteTaskFromLocalStorage,
-    updateLocalStorage
+    updateLocalStorage,
+    deleteThisDateObj,
 }
