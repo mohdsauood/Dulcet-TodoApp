@@ -57,8 +57,6 @@ const yesterDayEvent = () => {
         });
         setPresentDate(format(newDatetest, 'MMMMd'));
         setPresentFullDate(format(newDatetest, 'do MMMM yyy'));
-        console.log(`${format(newDatetest,'MMMMd')} is the updated Date`);
-        console.log(`${format(newDatetest,'do MMMM yyy')} is the updated FullDate`);
         window.dispatchEvent(new Event('storage'));
         
     });
