@@ -339,7 +339,7 @@ header span {
 }
 .yellow{
     background-color: rgb(255, 255, 152,0.1);
-    color:rgb(255, 255, 152)
+    color:rgb(255, 255, 152);
 }
 .orange{
     background-color: rgb(255, 202, 103,0.1);
@@ -451,6 +451,9 @@ form label,form span{
     color: var(--primary);
 }
 
+.viewingTask .im-circle-o{
+    margin-left: .5em;
+}
 /* small tablet styles */
 @media screen and (min-width: 620px){
     header figure img {
@@ -596,6 +599,9 @@ form label,form span{
     /*view task page*/
     .viewingTask p{
         padding-left: 10vw;
+    }
+    .viewingTask p:nth-child(3),.viewingTask p:nth-child(4){
+        margin: 0 6vw !important;
     }
   
 }
@@ -743,30 +749,21 @@ form label,form span{
     form{
         margin: 0 12vw;
     }
-    form select,form input[type='date'],.backButton{
-        cursor: pointer;
-    }
-    form select:hover,form input[type='date']:hover,.backButton:hover{
-        background-color: var(--backgroundDark);
-    }
+    
     form input,form textarea{
         width: 60vw;
+        max-width: 700px;
     }
-    form input:focus,form textarea:focus{
-        outline: none;
-    }
-    form input{
-        margin-top: 1.5em;
-        margin-bottom: 1em;
-    }
-    form textarea{
-        height: 25vh;
-    }
-    form select {
-        margin-left: 1em;
-    }
+    
     /*view task page*/
     .viewingTask p{
-        padding-left: 10vw;
+        margin: 0 6vw !important;
+    }
+    .viewingTask p:nth-child(1){
+        padding-right: 6em;
+        text-align: right;
+    }
+    .viewingTask{
+        max-width: 1060px;
     }
 }
