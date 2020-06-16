@@ -49,10 +49,10 @@ const generateHomepageContent = () => {
     </section>
     <section class="task">
         <div id="task">
-            <p>Title</p>
+            <p>Add new Task</p>
             <p><i class="im im-circle-o"></i>
             </p>
-            <p>due date</p>
+            <p>to remove this</p>
     
         </div>
         <button><i class="im im-x-mark"></i>
@@ -60,10 +60,10 @@ const generateHomepageContent = () => {
     </section>
     <section class="task">
         <div id="task">
-            <p>Title</p>
+            <p>Add new task</p>
             <p><i class="im im-circle-o"></i>
             </p>
-            <p>due date</p>
+            <p>to remove this</p>
     
         </div>
         <button><i class="im im-x-mark"></i>
