@@ -138,6 +138,7 @@ const generateHomepageEvents = () => {
     storageChangeEvent();
     yesterDayEvent();
     tomorrowEvent();
+    jumpDateEvent();
     homeDateButtonEvent();
     clearButtonEvent();
 }
