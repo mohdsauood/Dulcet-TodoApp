@@ -11,6 +11,7 @@
     --background: #ECF0F3;
     --primary: #555555;
     --primarylight: #AAAAAA;
+    --backgroundDark: #e8ebee;
 }
 
 /*reset*/
@@ -295,7 +296,7 @@ header span {
 }
 .tasks {
     height: 40vh;
-    overflow:scroll;
+    overflow-y:auto;
 }
 
 .uiButtons {
@@ -448,4 +449,160 @@ form label,form span{
 .viewingTask p{
     padding:.5em 1em;
     color: var(--primary);
+}
+
+/* small tablet styles */
+@media screen and (min-width: 620px){
+    header figure img {
+        width: 45%;
+    }
+    .quote{
+        margin-top: 1em;
+    }
+    #jumpDate{
+        margin-left: 8em;
+    }
+    .im-menu-dot-h{
+        margin-bottom: .7em;
+        cursor: pointer;
+    }
+    .goToDate input,.navButtons button,.task button,.uiButtons button{
+        cursor: pointer;
+    }
+    .goToDate input:hover,.navButtons button:hover,.task button:hover,.uiButtons button:hover,#addButton:hover,#task:hover{
+        background-color: var(--backgroundDark);
+    }
+    
+    .tasks{
+        margin-top: 1em;
+    }
+    .task{
+        margin-top: .3em;
+        justify-content: space-around;
+    }
+    
+    .task div{
+        width: 50vw;
+        cursor: pointer;
+    }
+    #yes,#no{
+        cursor: pointer;
+    }
+    #yes:hover{
+        background-color: rgb(99, 127, 204);
+    }
+    #no:hover{
+        background-color: rgb(235, 82, 82);
+    }
+
+    /* add task page*/
+    form{
+        margin: 0 12vw;
+    }
+    form select,form input[type='date'],.backButton{
+        cursor: pointer;
+    }
+    form select:hover,form input[type='date']:hover,.backButton:hover{
+        background-color: var(--backgroundDark);
+    }
+    form input,form textarea{
+        width: 60vw;
+    }
+    form input:focus,form textarea:focus{
+        outline: none;
+    }
+    form input{
+        margin-top: 1.5em;
+        margin-bottom: 1em;
+    }
+    form textarea{
+        height: 25vh;
+    }
+    form select {
+        margin-left: 1em;
+    }
+    /*view task page*/
+    .viewingTask p{
+        padding-left: 10vw;
+    }
+  
+}
+
+/* large tablet & laptop styles */
+@media screen and (min-width: 960px){
+    body{
+        font-size: 19px;
+    }
+    .quote p{
+        font-size: 1.2em;
+    }
+    header figure img {
+        width: 40%;
+    }
+    .quote{
+        margin-top: 1em;
+    }
+    #jumpDate{
+        margin-left: 8em;
+    }
+    .im-menu-dot-h{
+        margin-bottom: .7em;
+        cursor: pointer;
+    }
+    .navButtons{
+        justify-content: space-around;
+    }
+    .task{
+        margin-top: 1em;
+        justify-content: space-around;
+    }
+    .im-x-mark{
+        font-size: 25px;
+    }
+    .task button{
+        height: 6vh;
+        width: 6vw;
+    }
+    .im-plus{
+        font-size: 35px;
+    }
+
+    /* add task page*/
+    form{
+        margin: 0 12vw;
+    }
+    form select,form input[type='date'],.backButton{
+        cursor: pointer;
+    }
+    form select:hover,form input[type='date']:hover,.backButton:hover{
+        background-color: var(--backgroundDark);
+    }
+    form input,form textarea{
+        width: 60vw;
+    }
+    form input:focus,form textarea:focus{
+        outline: none;
+    }
+    form input{
+        margin-top: 1.5em;
+        margin-bottom: 1em;
+    }
+    form textarea{
+        height: 25vh;
+    }
+    form select {
+        margin-left: 1em;
+    }
+    /*view task page*/
+    .viewingTask p{
+        padding-left: 10vw;
+    }
+  
+}
+
+/* desktop styles */
+@media screen and (min-width: 1200px){
+    body{
+        font-size: 19px;
+    }
 }
