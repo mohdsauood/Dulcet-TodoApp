@@ -31,12 +31,14 @@ const setPresentFullDate=(p1=format(new Date(), 'do MMMM yyy'))=>{
 }
 //later add little cute animation
 //add feature when hovered over circle show the priority and its meaning
-//fix the logo
 //i'll try cleaning stuffs
 //viewtask only works on title and duedate not when clicked on other parts of div
-//add one go to date option so user can jump to that date 
 //fix css tomorrow and add hover animation for priority
-//put slight arrow icon on click let it spread across and show go to date option
+//remove menu for big screens
+//check what element is hidden in big screen and what element is hidden in small screen
+//write features in READ ME guide
+//added styles till 960px
+//do the rest and animations
 setPresentDate();
 setPresentFullDate();
 setQuote();

@@ -12,8 +12,8 @@ const generateViewTaskpageContent = (millis) => {
             
             <textarea placeholder="description" id="description" cols="30" rows="10" value="">${task.description}</textarea>
         </form>
-        <p ><span>priority :  </span>${task.priority}</p>
-        <p><span>due date :  </span>${task.mainDueDate}</p>
+        <p ><span>priority :  </span>${(task.priority!='')?task.priority:'not defined'}</p>
+        <p><span>due date :  </span>${(task.mainDueDate!='')?task.mainDueDate:'not defined'}</p>
     </section>`;
 }
 

@@ -42,7 +42,9 @@ const generateAddTaskContent = () => {
     <option value="AM">AM</option>
     <option value="PM">PM</option>
 </select>
+    <br>
     <input type="text" placeholder="title" id="title"  maxlength="20" >
+    <br>
     <textarea placeholder="description" id="description" cols="30" rows="10"></textarea>
    <br>
     <span id="errorSpan"></span>
