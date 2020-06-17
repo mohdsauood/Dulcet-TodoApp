@@ -53,7 +53,9 @@ It works on all machines , browsers and viewports as long as the :computer: devi
 
 ## TechUsed
 Language : Vanilla Js :trophy:
+
 Design : Mobile First Approach 
+
 [![library](https://img.shields.io/static/v1?label=library&message=date-fns&color=blue)](https://date-fns.org/) 
 
 ## Credits
