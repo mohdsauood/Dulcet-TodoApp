@@ -61,7 +61,7 @@ Design : Mobile First Approach
 ## Credits
 All hail the :muscle: master of web, Net Ninja :fire: for this amazing  design [tutorial](https://www.youtube.com/playlist?list=PL4cUxeGkcC9hH1tAjyUPZPjbj-7s200a4) on mobile first approach
 
-<p align="center"><b>Made with love :blue_heart: </b>[mohamed sauood](https://github.com/mohdsauood) </p>
+<b style="margin-left:60px;">Made with love :blue_heart: </b>[mohamed sauood](https://github.com/mohdsauood)
 
 
 
