@@ -29,7 +29,6 @@ It doesn't use any server side architecture, all the data is stored in browser.I
         <div>
             <img style=" width: 5%;height:400px !important;" src="https://github.com/mohdsauood/Dulcet-TodoApp/blob/master/dist/assets/images/mobileHome.PNG" alt="home mobile">
             <img style=" width: 5%;" src="https://github.com/mohdsauood/Dulcet-TodoApp/blob/master/dist/assets/images/mobileAddTask.PNG" alt="home addtask">
-            <img style=" width: 5%;" src="https://github.com/mohdsauood/Dulcet-TodoApp/blob/master/dist/assets/images/mobileViewTask.PNG" alt="home viewtask">
         </div>
     </div>
 
