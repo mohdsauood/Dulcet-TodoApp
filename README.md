@@ -1,7 +1,7 @@
 
 
 <p align="center" style="color:red;">
-    <img style="max-width:600px;" src"https://github.com/mohdsauood/Dulcet-TodoApp/blob/master/dist/assets/images/dulcetlogo.png" width="490" alt"dulcet" >
+    <img src"https://github.com/mohdsauood/Dulcet-TodoApp/blob/master/dist/assets/images/dulcetlogo.png" width="490" alt"dulcet" >
 </p>
 <p align="center">
 	<a href="https://mohdsauood.github.io/Dulcet-TodoApp/">Demo</a> •
@@ -27,9 +27,9 @@ It doesn't use any server side architecture, all the data is stored in browser.I
         </div>
         <p style="text-align: center">Mobile Demo</p>
         <div class="div2">
-            <img style=" width: 30%;" src="https://github.com/mohdsauood/Dulcet-TodoApp/blob/master/dist/assets/images/mobileHome.PNG" alt="home mobile">
-            <img style=" width: 30%;" src="https://github.com/mohdsauood/Dulcet-TodoApp/blob/master/dist/assets/images/mobileAddTask.PNG" alt="home addtask">
-            <img style=" width: 30%;" src="https://github.com/mohdsauood/Dulcet-TodoApp/blob/master/dist/assets/images/mobileViewTask.PNG" alt="home viewtask">
+            <img style=" width: 15%;" src="https://github.com/mohdsauood/Dulcet-TodoApp/blob/master/dist/assets/images/mobileHome.PNG" alt="home mobile">
+            <img style=" width: 15%;" src="https://github.com/mohdsauood/Dulcet-TodoApp/blob/master/dist/assets/images/mobileAddTask.PNG" alt="home addtask">
+            <img style=" width: 15%;" src="https://github.com/mohdsauood/Dulcet-TodoApp/blob/master/dist/assets/images/mobileViewTask.PNG" alt="home viewtask">
         </div>
     </div>
 
