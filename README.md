@@ -1,6 +1,7 @@
-<p  align="center">
-<img src"https://github.com/mohdsauood/Dulcet-TodoApp/blob/master/dist/assets/images/readmelogo.png"  alt="dulcet" >
-<p>
+<h1 align="center">
+  <br>
+  <img src="https://github.com/mohdsauood/Dulcet-TodoApp/blob/master/dist/assets/images/readmelogo.png" alt="Dulcet" width="500">
+</h1>
 
 <p align="center">
 	<a href="https://mohdsauood.github.io/Dulcet-TodoApp/">Demo</a> •
