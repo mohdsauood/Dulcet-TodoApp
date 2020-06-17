@@ -1,7 +1,7 @@
 
 
 <p align="center" style="color:red;">
-    <img style="max-width:600px;" src="./assets/images/dulcetlogo.png" width="490" alt"dulcet" >
+    <img style="max-width:600px;" src=/assets/images/dulcetlogo.png" width="490" alt"dulcet" >
 </p>
 <p align="center">
 	<a href="https://mohdsauood.github.io/Dulcet-TodoApp/">Demo</a> •
@@ -23,13 +23,13 @@ It doesn't use any server side architecture, all the data is stored in browser.I
             margin: 0 auto;"class="maindiv">
        <p style="text-align: center">Desktop Demo</p>
         <div class="div1" >
-            <img style=" width: 90%;"src="./assets/images/desktopHomeGuide.png" alt="Home Desktop">
+            <img style=" width: 90%;"src="/assets/images/desktopHomeGuide.png" alt="Home Desktop">
         </div>
         <p style="text-align: center">Mobile Demo</p>
         <div class="div2">
-            <img style=" width: 30%;" src="./assets/images/mobileHome.PNG" alt="home mobile">
-            <img style=" width: 30%;" src="./assets/images/mobileAddTask.PNG" alt="home addtask">
-            <img style=" width: 30%;" src="./assets/images/mobileViewTask.PNG" alt="home viewtask">
+            <img style=" width: 30%;" src="/assets/images/mobileHome.PNG" alt="home mobile">
+            <img style=" width: 30%;" src="/assets/images/mobileAddTask.PNG" alt="home addtask">
+            <img style=" width: 30%;" src="/assets/images/mobileViewTask.PNG" alt="home viewtask">
         </div>
     </div>
 
