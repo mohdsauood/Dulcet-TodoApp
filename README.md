@@ -27,7 +27,7 @@ It doesn't use any server side architecture, all the data is stored in browser.I
         </div>
         <p style="text-align: center">Mobile Demo</p>
         <div>
-            <img style=" width: 5%;height:30vh" src="https://github.com/mohdsauood/Dulcet-TodoApp/blob/master/dist/assets/images/mobileHome.PNG" alt="home mobile">
+            <img style=" width: 5%;height:350px;" src="https://github.com/mohdsauood/Dulcet-TodoApp/blob/master/dist/assets/images/mobileHome.PNG" alt="home mobile">
             <img style=" width: 5%;" src="https://github.com/mohdsauood/Dulcet-TodoApp/blob/master/dist/assets/images/mobileAddTask.PNG" alt="home addtask">
             <img style=" width: 5%;" src="https://github.com/mohdsauood/Dulcet-TodoApp/blob/master/dist/assets/images/mobileViewTask.PNG" alt="home viewtask">
         </div>
@@ -61,7 +61,7 @@ Design : Mobile First Approach
 ## Credits
 All hail the :muscle: master of web, Net Ninja :fire: for this amazing  design [tutorial](https://www.youtube.com/playlist?list=PL4cUxeGkcC9hH1tAjyUPZPjbj-7s200a4) on mobile first approach
 
-<b style="margin-left:60px;">Made with love :blue_heart: </b>[mohamed sauood](https://github.com/mohdsauood)
+<b>Made with love :blue_heart: </b>[mohamed sauood](https://github.com/mohdsauood)
 
 
 
