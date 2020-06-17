@@ -20,16 +20,16 @@ It doesn't use any server side architecture, all the data is stored in browser.I
 # Demo
 ---
   <div style=" width: 60vw;
-            margin: 0 auto;"class="maindiv">
+            margin: 0 auto;">
        <p style="text-align: center">Desktop Demo</p>
-        <div class="div1" >
+        <div  >
             <img style=" width: 90%;"src="https://github.com/mohdsauood/Dulcet-TodoApp/blob/master/dist/assets/images/desktopHomeGuide.png" alt="Home Desktop">
         </div>
         <p style="text-align: center">Mobile Demo</p>
-        <div class="div2">
-            <img style=" width: 15%;" src="https://github.com/mohdsauood/Dulcet-TodoApp/blob/master/dist/assets/images/mobileHome.PNG" alt="home mobile">
-            <img style=" width: 15%;" src="https://github.com/mohdsauood/Dulcet-TodoApp/blob/master/dist/assets/images/mobileAddTask.PNG" alt="home addtask">
-            <img style=" width: 15%;" src="https://github.com/mohdsauood/Dulcet-TodoApp/blob/master/dist/assets/images/mobileViewTask.PNG" alt="home viewtask">
+        <div>
+            <img style=" width: 5%;" src="https://github.com/mohdsauood/Dulcet-TodoApp/blob/master/dist/assets/images/mobileHome.PNG" alt="home mobile">
+            <img style=" width: 5%;" src="https://github.com/mohdsauood/Dulcet-TodoApp/blob/master/dist/assets/images/mobileAddTask.PNG" alt="home addtask">
+            <img style=" width: 5%;" src="https://github.com/mohdsauood/Dulcet-TodoApp/blob/master/dist/assets/images/mobileViewTask.PNG" alt="home viewtask">
         </div>
     </div>
 
