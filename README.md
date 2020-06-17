@@ -23,7 +23,7 @@ It doesn't use any server side architecture, all the data is stored in browser.I
             margin: 0 auto;">
        <p style="text-align: center">Desktop Demo</p>
         <div  >
-            <img style=" width: 90%;"src="https://github.com/mohdsauood/Dulcet-TodoApp/blob/master/dist/assets/images/desktopHomeGuide.png" alt="Home Desktop">
+            <img style=" width: 100%;"src="https://github.com/mohdsauood/Dulcet-TodoApp/blob/master/dist/assets/images/desktopHomeGuide.png" alt="Home Desktop">
         </div>
         <p style="text-align: center">Mobile Demo</p>
         <div>
