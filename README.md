@@ -21,11 +21,11 @@ It doesn't use any server side architecture, all the data is stored in browser.I
 ---
   <div style=" width: 60vw;
             margin: 0 auto;">
-       <p style="text-align: center">Desktop Demo</p>
+       <p align="center">Desktop Demo</p>
         <div  >
             <img style=" width: 100%;"src="https://github.com/mohdsauood/Dulcet-TodoApp/blob/master/dist/assets/images/desktopHomeGuide.png" alt="Home Desktop">
         </div>
-        <p style="text-align: center">Mobile Demo</p>
+        <p align="center">Mobile Demo</p>
         <div>
             <img style=" width: 5%;height:400px !important;" src="https://github.com/mohdsauood/Dulcet-TodoApp/blob/master/dist/assets/images/mobileHome.PNG" alt="home mobile">
             <img style=" width: 5%;" src="https://github.com/mohdsauood/Dulcet-TodoApp/blob/master/dist/assets/images/mobileAddTask.PNG" alt="home addtask">
