@@ -41,7 +41,7 @@ It works on all machines , browsers and viewports as long as the :computer: devi
 
 ---
 # Features
- - Clean Ui and smooth interface for user to maintain their daily tasks
+ - Clean UI and smooth interface for user to maintain their daily tasks
  - Shows a new motivational quote every single day
  - Responsive Design works across mobile :iphone: , tablet , small or large laptop and desktop.
  - Shows priority of each task in the form of a colored circle
