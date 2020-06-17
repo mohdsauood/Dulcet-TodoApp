@@ -1,10 +1,10 @@
 
 
-<p align="center" style="color:red;">
+
 	<div style="width:600px;">
 		<img style="width:100%;" src"https://github.com/mohdsauood/Dulcet-TodoApp/blob/master/dist/assets/images/dulcetlogo.png" width="490" alt"dulcet" >
 	</div>
-</p>
+
 <p align="center">
 	<a href="https://mohdsauood.github.io/Dulcet-TodoApp/">Demo</a> •
     <a href="#usage">Usage</a> •
