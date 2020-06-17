@@ -58,7 +58,7 @@ Design : Mobile First Approach
 [![library](https://img.shields.io/static/v1?label=library&message=date-fns&color=blue)](https://date-fns.org/) 
 
 ## Credits
-All hail the :muscle: master of web, Net Ninja :fire: for this amazing  design [tutorial](https://www.youtube.com/playlist?list=PL4cUxeGkcC9hH1tAjyUPZPjbj-7s200a4) on mobile first approach
+All hail the :muscle: master of web, Net Ninja :fire: for [this](https://www.youtube.com/playlist?list=PL4cUxeGkcC9hH1tAjyUPZPjbj-7s200a4) amazing tutorial on mobile first approach
 
 <b>Made with love :blue_heart: </b>[mohamed sauood](https://github.com/mohdsauood)
 
