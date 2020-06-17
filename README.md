@@ -1,5 +1,5 @@
 <p  align="center">
-	<img style="width:10%;" src"https://github.com/mohdsauood/Dulcet-TodoApp/blob/master/dist/assets/images/readmelogo.png" 	width="490" alt"dulcet" >
+	<img style="width:10%;" src"https://github.com/mohdsauood/Dulcet-TodoApp/blob/master/dist/assets/images/readmelogo.png" 	width="490" alt="dulcet" >
 <p>
 
 <p align="center">
