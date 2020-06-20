@@ -10,15 +10,12 @@
     <a href="#techused">TechUsed</a> •
 </p>
 
----
 Dulcet is a cross platform web application :earth_asia:. As the tagline says ,it is a "minimalistic to-do app" :clipboard:. You can add , update , delete tasks for a certain day. Revisit previous days to check the old tasks and go to future dates to add tasks on that day.
 
 It doesn't use any server side architecture, all the data is stored in browser.I wanted to keep it simple and create an elegant web app without any fancy frameworks and show the capabilities of Vanilla js with plain HTML,CSS 
 
----
 
 # Demo
----
   <div style=" width: 60vw;
             margin: 0 auto;">
        <p align="center">Desktop Demo</p>
@@ -58,7 +55,7 @@ Design : Mobile First Approach
 [![library](https://img.shields.io/static/v1?label=library&message=date-fns&color=blue)](https://date-fns.org/) 
 
 ## Credits
-All hail the :muscle: master of web, Net Ninja :fire: for this amazing  design [tutorial](https://www.youtube.com/playlist?list=PL4cUxeGkcC9hH1tAjyUPZPjbj-7s200a4) on mobile first approach
+All hail the :muscle: master of web, Net Ninja :fire: for [this](https://www.youtube.com/playlist?list=PL4cUxeGkcC9hH1tAjyUPZPjbj-7s200a4) amazing tutorial on mobile first approach
 
 <b>Made with love :blue_heart: </b>[mohamed sauood](https://github.com/mohdsauood)
 
