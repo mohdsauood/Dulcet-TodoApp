@@ -15,14 +15,14 @@ Dulcet is a cross platform SPA :earth_asia:. As the tagline says ,it is a "minim
 It doesn't use any server side architecture, all the data is stored in browser.I wanted to keep it simple and create an elegant web app without any fancy frameworks and show the capabilities of Vanilla js with plain HTML,CSS 
 
 
-# Demo
+# ScreenShots
   <div style=" width: 60vw;
             margin: 0 auto;">
-       <p align="center">Desktop Demo</p>
+       <p align="center">Desktop</p>
         <div  >
             <img style=" width: 100%;"src="https://github.com/mohdsauood/Dulcet-TodoApp/blob/master/dist/assets/images/desktopHomeGuide.png" alt="Home Desktop">
         </div>
-        <p align="center">Mobile Demo</p>
+        <p align="center">Mobile </p>
         <div>
             <img style=" width: 5%;height:400px !important;" src="https://github.com/mohdsauood/Dulcet-TodoApp/blob/master/dist/assets/images/mobileHome.PNG" alt="home mobile">
             <img style=" width: 5%;" src="https://github.com/mohdsauood/Dulcet-TodoApp/blob/master/dist/assets/images/mobileAddTask.PNG" alt="home addtask">
