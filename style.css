@@ -1,76 +1,75 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Quicksand, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Quicksand, sans-serif;
 }
 
 :root {
-    --blue: rgb(115, 147, 235);
-    --lightred: rgb(255, 89, 89);
-    --background: #ECF0F3;
-    --primary: #555555;
-    --primarylight: #AAAAAA;
-    --backgroundDark: #e8ebee;
+  --blue: rgb(115, 147, 235);
+  --lightred: rgb(255, 89, 89);
+  --background: #ecf0f3;
+  --primary: #555555;
+  --primarylight: #aaaaaa;
+  --backgroundDark: #d7dadd;
 }
 
 /*reset*/
 button {
-    background-color: none;
-    border: none;
+  background-color: none;
+  border: none;
 }
 
-
 @font-face {
-    font-family: 'Quicksand';
-    src: url("./assets/Quicksand-Regular.otf");
+  font-family: 'Quicksand';
+  src: url('./assets/Quicksand-Regular.otf');
 }
 
 /*FONTS */
 
 header h2 {
-    font-size: 1.6em;
+  font-size: 1.6em;
 }
 
 .quote p {
-    font-size: 1.1em;
-    font-family: 'Indie Flower', cursive;
+  font-size: 1.1em;
+  font-family: 'Indie Flower', cursive;
 }
 
 .navButtons div button {
-    font-size: 1em;
+  font-size: 1em;
 }
 
 .task div p {
-    font-size: 1em;
+  font-size: 1em;
 }
 
 .task div :nth-child(1) {
-    font-size: 1.1em;
+  font-size: 1.1em;
 }
 
 .uiButtons button {
-    font-size: 1.2em;
+  font-size: 1.2em;
 }
 
 /*grid positions*/
 
 .main {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(6, minmax(1vh, auto));
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(6, minmax(1vh, auto));
 }
 
 header {
-    grid-column: 1/7;
+  grid-column: 1/7;
 }
 
 .quote {
-    grid-column: 1/7;
+  grid-column: 1/7;
 }
 
-#dynamicContent{
-    grid-column: 1/7;
+#dynamicContent {
+  grid-column: 1/7;
 }
 /* .navButtons {
     grid-column: 1/7;
@@ -85,685 +84,699 @@ header {
 } */
 
 /*misc styles*/
-header figure img{
-    width: 60%;
+header figure img {
+  width: 60%;
 }
-.deletePopUp
-{
-    z-index: 2;
-    height: 100vh;
-    width: 100vw;
-    background-color: rgb(0, 0, 0,0.6);
-    position: absolute;
-    top: 0;
-    left: 0;
-    border-radius: 40px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    display: none;
+.deletePopUp {
+  z-index: 2;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 40px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  display: none;
 }
-.deletePopUp button{
-    padding: .1em .5em;
-    margin: 0 1em;
-    font-size: 1.7em;
-    background-color: var(--background);
-    color: var(--primary);
-    border-radius: 10px;
-    width: 30vw;
-    height: 7vh;
+.deletePopUp button {
+  padding: 0.1em 0.5em;
+  margin: 0 1em;
+  font-size: 1.7em;
+  background-color: var(--background);
+  color: var(--primary);
+  border-radius: 10px;
+  width: 30vw;
+  height: 7vh;
 }
-.deletePopUp p{
-    color: white;
-    margin: 1em;
-    font-size: 1.5em;
-    font-weight: bold;
+.deletePopUp p {
+  color: white;
+  margin: 1em;
+  font-size: 1.5em;
+  font-weight: bold;
 }
-.displayPopUp{
-    display: flex;
+.displayPopUp {
+  display: flex;
 }
-#yes
-{
-    color: white;
-    background-color: var(--blue);
+#yes {
+  color: white;
+  background-color: var(--blue);
 }
-#no{
-    color: white;
-    background-color: var(--lightred);
+#no {
+  color: white;
+  background-color: var(--lightred);
 }
 body {
-    overflow-y: hidden;
-    background-color: var(--background);
+  overflow-y: hidden;
+  background-color: var(--background);
 }
 
 .main {
-    border-radius: 40px;
-    margin: 1em;
-    box-shadow: 13px 13px 20px #cbced1,
-        -13px -13px 20px #ffffff;
-    height: 96vh;
+  border-radius: 40px;
+  margin: 1em;
+  box-shadow: 13px 13px 20px #cbced1, -13px -13px 20px #ffffff;
+  height: 96vh;
 }
 
 header {
-    padding: .1em;
-    text-align: center;
-    color: var(--primary);
+  padding: 0.1em;
+  text-align: center;
+  color: var(--primary);
 }
 
 header h2:nth-child(1) {
-    color: var(--blue);
+  color: var(--blue);
 }
 
 header h2:nth-child(2) {
-    margin-top: .5em;
-    font-size: 1em;
+  margin-top: 0.5em;
+  font-size: 1em;
 }
 
 header :nth-child(2) {
-    text-transform: uppercase;
-    margin-top: 1vh;
-    text-align: end;
-    font-size: 1.1em;
+  text-transform: uppercase;
+  margin-top: 1vh;
+  text-align: end;
+  font-size: 1.1em;
 }
 
 header span {
-    font-weight: normal;
-    color: var(--primarylight);
+  font-weight: normal;
+  color: var(--primarylight);
 }
 
 .quote {
-    margin: .5em .1em;
-    height: auto;
-    text-align: center;
-    color: var(--primary);
-    padding: .1em;
+  margin: 0.5em 0.1em;
+  height: auto;
+  text-align: center;
+  color: var(--primary);
+  padding: 0.1em;
 }
 
 .quote :nth-child(2) {
-    font-family: Quicksand;
-    font-style: italic;
-    color: var(--primarylight);
-    text-align: right;
-}
-
-.quoteAuthor{
-    margin-top:.5em ;
-}
-.navButtons {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 1vh;
-    padding: 0 .3em;
-}
-
-.navButtons button {
-    height: 6vh;
-    padding: .1em .5em;
-    background-color: var(--background);
-    color: var(--primary);
-    border-radius: 10px;
-    box-shadow: 7px 7px 10px #cbced1, -7px -7px 10px #ffffff;
-}
-
-.im-calendar {
-    border: none;
-    color: var(--primary);
-    font-size: 1.1em;
-    margin-right: .2em;
-}
-
-.navButtons div :nth-child(2) {
-    box-shadow: 7px 7px 10px #cbced1,
-        -7px -7px 10px #ffffff;
-}
-.im-menu-dot-h{
-    font-size:20;
-    color:var(--primary);
-    margin:0 .5em ;
-}
-.goToDate span{
-    color: var(--primary);
-}
-.goToDate input[type="date"] {
-    width: 30vw;
-    font-size: .7em;
-    background-color: var(--background);
-    border: none;
-    border-radius: 10px;
-    box-shadow: 7px 7px 10px #cbced1, -7px -7px 10px #ffffff;
-    color: var(--primary);
-}
-.goToDate span,.goToDate input[type="date"]{
-    padding: .3em;
-    margin-bottom: 1em;
-    display: none;
-}
-.homeDate
-{
-    display:inline !important;
-}
-.task {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-.task div {
-    width: 70vw;
-    border-radius: 20px;
-    padding: .2em .5em;
-    margin: .5em 0;
-    display: grid;
-    grid-template-columns: repeat(2, 4fr,1fr);
-    background-color: --var(--background);
-    border: 2px solid rgb(85, 122, 221, 0.6);
-    color: var(--primary);
-
-}
-
-.task div :nth-child(2) {
-    justify-self: end;
-    align-self: center;
-}
-
-.task div :nth-child(3) {
-    font-size: .8em;
-    padding-left: 1em;
-    color: var(--primarylight);
-    width: 100%;
-    grid-column: 1/3;
-}
-
-.task button {
-    align-self: center;
-    height: 6vh;
-    width: 6vh;
-    border-radius: 12px;
-    color: var(--lightred);
-    background-color: var(--background);
-    box-shadow: 7px 7px 10px #cbced1,
-        -7px -7px 10px #ffffff;
-}
-
-.im-x-mark {
-    font-size: 18px;
-    pointer-events:none;
-}
-.im-circle-o{
-    color:rgb(255,255,255,0.1);
-}
-.tasks {
-    height: 40vh;
-    overflow-y:auto;
-}
-
-.uiButtons {
-    height: 15vh;
-}
-
-.uiButtons button {
-    display: block;
-    margin: 0 auto;
-}
-
-.uiButtons :nth-child(1) {
-    border-radius: 12px;
-    margin-bottom: 6vh;
-    height: 7vh;
-    background-color: var(--background);
-    box-shadow: 7px 7px 10px #cbced1,
-        -7px -7px 10px #ffffff;
-}
-
-.im-plus {
-    color: var(--lightred);
-    padding: .3em .5em;
-}
-
-.uiButtons :nth-child(2) {
-    border-radius: 12px;
-    padding: .3em .9em;
-    height: 5vh;
-    background-color: var(--background);
-    color: var(--primary);
-
-    box-shadow: 7px 7px 10px #cbced1,
-        -7px -7px 10px #ffffff;
-}
-
-.red{
-    color: var(--lightred);
-    background-color: rgba(255, 89, 89, 0.1);
-}
-.yellow{
-    background-color: rgb(255, 255, 152,0.1);
-    color:rgb(255, 255, 152);
-}
-.orange{
-    background-color: rgb(255, 202, 103,0.1);
-    color:rgb(255, 202, 103);
-}
-.blue{
-    color: var(--blue);
-}
-
-/*form page*/
-.backButton{
-    border-radius: 12px;
-    padding: .3em .9em;
-    height: 5vh;
-    background-color: var(--background);
-    color: var(--primary);
-    box-shadow: 7px 7px 10px #cbced1,
-        -7px -7px 10px #ffffff;
-}
-
-form {
-    border: none;
-    background-color: var(--background);
-    padding: 1em;
-}
-
-form input,
-form textarea {
-    margin: .5em 0;
-    padding: .5em .5em;
-    border: none;
-    background-color: var(--background);
-    border-radius: 25px;
-    box-shadow: inset 8px 8px 8px #cbced1, inset -8px -8px 8px #ffffff;
-}
-
-form select,
-form input[type="date"] {
-    margin: .9em 0;
-    background-color: var(--background);
-    border: none;
-    border-radius: 10px;
-    box-shadow: 7px 7px 10px #cbced1,
-        -7px -7px 10px #ffffff;
-    color: var(--primary);
-}
-
-form input[type="date"] {
-    width: 40vw;
-    font-size: .7em;
-}
-
-form label,form span{
-    color: var(--primary);
-}
-
-  #errorSpan{
-    color: var(--lightred);
-    font-size: 1.2em;
-    text-transform: uppercase;
-    font-weight: bold;
-    }
-
-/**view task page**/
-
-.viewingTask {
-    margin: 1vh 0;
-}
-
-.viewingTask form {
-    border: none;
-    background-color: var(--background);
-    padding: 1em;
-    padding-top: 0;
-}
-
-.viewingTask form input,
-.viewingTask form textarea {
-    margin: .1em 0;
-    padding: .5em;
-    border: none;
-    background-color: var(--background);
-}
-.viewingTask form input{
-    margin-bottom: 2vh;
-    
-    color: var(--blue);
-    font-size: 1.1em;
-    font-weight: bold;
-}
-
-.viewingTask form textarea{
-    color: var(--primary);
-}
-.viewingTask p:nth-child(1){
-  padding:0 1em;
+  font-family: Quicksand;
+  font-style: italic;
   color: var(--primarylight);
   text-align: right;
 }
 
-.viewingTask span{
-    color: var(--blue);
-    font-size: 1.1em;
-    font-weight: bold;
+.quoteAuthor {
+  margin-top: 0.5em;
+}
+.navButtons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1vh;
+  padding: 0 0.3em;
 }
 
-.viewingTask p{
-    padding:.5em 1em;
-    color: var(--primary);
+.navButtons button {
+  height: 6vh;
+  padding: 0.1em 0.5em;
+  background-color: var(--background);
+  color: var(--primary);
+  border-radius: 10px;
+  box-shadow: 7px 7px 10px #cbced1, -7px -7px 10px #ffffff;
 }
 
-.viewingTask .im-circle-o{
-    margin-left: .5em;
+.im-calendar {
+  border: none;
+  color: var(--primary);
+  font-size: 1.1em;
+  margin-right: 0.2em;
+}
+
+.navButtons div :nth-child(2) {
+  box-shadow: 7px 7px 10px #cbced1, -7px -7px 10px #ffffff;
+}
+.im-menu-dot-h {
+  font-size: 20;
+  color: var(--primary);
+  margin: 0 0.5em;
+}
+.goToDate span {
+  color: var(--primary);
+}
+.goToDate input[type='date'] {
+  width: 30vw;
+  font-size: 0.7em;
+  background-color: var(--background);
+  border: none;
+  border-radius: 10px;
+  box-shadow: 7px 7px 10px #cbced1, -7px -7px 10px #ffffff;
+  color: var(--primary);
+}
+.goToDate span,
+.goToDate input[type='date'] {
+  padding: 0.3em;
+  margin-bottom: 1em;
+  display: none;
+}
+.homeDate {
+  display: inline !important;
+}
+.task {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.task div {
+  width: 70vw;
+  border-radius: 20px;
+  padding: 0.2em 0.5em;
+  margin: 0.5em 0;
+  display: grid;
+  grid-template-columns: repeat(2, 4fr, 1fr);
+  background-color: --var(--background);
+  border: 2px solid rgb(85, 122, 221, 0.6);
+  color: var(--primary);
+}
+
+.task div :nth-child(2) {
+  justify-self: end;
+  align-self: center;
+}
+
+.task div :nth-child(3) {
+  font-size: 0.8em;
+  padding-left: 1em;
+  color: var(--primarylight);
+  width: 100%;
+  grid-column: 1/3;
+}
+
+.task button {
+  align-self: center;
+  height: 6vh;
+  width: 6vh;
+  border-radius: 12px;
+  color: var(--lightred);
+  background-color: var(--background);
+  box-shadow: 7px 7px 10px #cbced1, -7px -7px 10px #ffffff;
+}
+
+.im-x-mark {
+  font-size: 18px;
+  pointer-events: none;
+}
+.im-circle-o {
+  color: rgb(255, 255, 255, 0.1);
+}
+.tasks {
+  height: 40vh;
+  overflow-y: auto;
+}
+
+.uiButtons {
+  height: 15vh;
+}
+
+.uiButtons button {
+  display: block;
+  margin: 0 auto;
+}
+
+.uiButtons :nth-child(1) {
+  border-radius: 12px;
+  margin-bottom: 6vh;
+  height: 7vh;
+  background-color: var(--background);
+  box-shadow: 7px 7px 10px #cbced1, -7px -7px 10px #ffffff;
+}
+
+.im-plus {
+  color: var(--lightred);
+  padding: 0.3em 0.5em;
+}
+
+.uiButtons :nth-child(2) {
+  border-radius: 12px;
+  padding: 0.3em 0.9em;
+  height: 5vh;
+  background-color: var(--background);
+  color: var(--primary);
+
+  box-shadow: 7px 7px 10px #cbced1, -7px -7px 10px #ffffff;
+}
+
+.red {
+  color: var(--lightred);
+  background-color: rgba(255, 89, 89, 0.1);
+}
+.yellow {
+  background-color: rgb(255, 255, 152, 0.1);
+  color: rgb(255, 255, 152);
+}
+.orange {
+  background-color: rgb(255, 202, 103, 0.1);
+  color: rgb(255, 202, 103);
+}
+.blue {
+  color: var(--blue);
+}
+
+/*form page*/
+.backButton {
+  border-radius: 12px;
+  padding: 0.3em 0.9em;
+  height: 5vh;
+  background-color: var(--background);
+  color: var(--primary);
+  box-shadow: 7px 7px 10px #cbced1, -7px -7px 10px #ffffff;
+}
+
+form {
+  border: none;
+  background-color: var(--background);
+  padding: 1em;
+}
+
+form input,
+form textarea {
+  margin: 0.5em 0;
+  padding: 0.5em 0.5em;
+  border: none;
+  background-color: var(--background);
+  border-radius: 25px;
+  box-shadow: inset 8px 8px 8px #cbced1, inset -8px -8px 8px #ffffff;
+}
+
+form select,
+form input[type='date'] {
+  margin: 0.9em 0;
+  background-color: var(--background);
+  border: none;
+  border-radius: 10px;
+  box-shadow: 7px 7px 10px #cbced1, -7px -7px 10px #ffffff;
+  color: var(--primary);
+}
+
+form input[type='date'] {
+  width: 40vw;
+  font-size: 0.7em;
+}
+
+form label,
+form span {
+  color: var(--primary);
+}
+
+#errorSpan {
+  color: var(--lightred);
+  font-size: 1.2em;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/**view task page**/
+
+.viewingTask {
+  margin: 1vh 0;
+}
+
+.viewingTask form {
+  border: none;
+  background-color: var(--background);
+  padding: 1em;
+  padding-top: 0;
+}
+
+.viewingTask form input,
+.viewingTask form textarea {
+  margin: 0.1em 0;
+  padding: 0.5em;
+  border: none;
+  background-color: var(--background);
+}
+.viewingTask form input {
+  margin-bottom: 2vh;
+
+  color: var(--blue);
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+.viewingTask form textarea {
+  color: var(--primary);
+}
+.viewingTask p:nth-child(1) {
+  padding: 0 1em;
+  color: var(--primarylight);
+  text-align: right;
+}
+
+.viewingTask span {
+  color: var(--blue);
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+.viewingTask p {
+  padding: 0.5em 1em;
+  color: var(--primary);
+  border-radius: 24px;
+  width: 60%;
+}
+
+.viewingTask .im-circle-o {
+  margin-left: 0.5em;
 }
 /* small tablet styles */
-@media screen and (min-width: 620px){
-    header figure img {
-        width: 45%;
-    }
-    .quote{
-        margin-top: 1em;
-    }
-    #jumpDate{
-        margin-left: 8em;
-    }
-    .im-menu-dot-h{
-        margin-bottom: .7em;
-        cursor: pointer;
-    }
-    .goToDate input,.navButtons button,.task button,.uiButtons button{
-        cursor: pointer;
-    }
-    .goToDate input:hover,.navButtons button:hover,.task button:hover,.uiButtons button:hover,#addButton:hover,#task:hover{
-        background-color: var(--backgroundDark);
-    }
-    
-    .tasks{
-        margin-top: 1em;
-    }
-    .task{
-        margin-top: .3em;
-        justify-content: space-around;
-    }
-    
-    .task div{
-        width: 50vw;
-        cursor: pointer;
-    }
-    #yes,#no{
-        cursor: pointer;
-    }
-    #yes:hover{
-        background-color: rgb(99, 127, 204);
-    }
-    #no:hover{
-        background-color: rgb(235, 82, 82);
-    }
+@media screen and (min-width: 620px) {
+  header figure img {
+    width: 45%;
+  }
+  .quote {
+    margin-top: 1em;
+  }
+  #jumpDate {
+    margin-left: 8em;
+  }
+  .im-menu-dot-h {
+    margin-bottom: 0.7em;
+    cursor: pointer;
+  }
+  .goToDate input,
+  .navButtons button,
+  .task button,
+  .uiButtons button {
+    cursor: pointer;
+  }
+  .goToDate input:hover,
+  .navButtons button:hover,
+  .task button:hover,
+  .uiButtons button:hover,
+  #addButton:hover,
+  #task:hover {
+    background-color: var(--backgroundDark);
+  }
 
-    /* add task page*/
-    form{
-        margin: 0 12vw;
-    }
-    form select,form input[type='date'],.backButton{
-        cursor: pointer;
-    }
-    form select:hover,form input[type='date']:hover,.backButton:hover{
-        background-color: var(--backgroundDark);
-    }
-    form input,form textarea{
-        width: 60vw;
-    }
-    form input:focus,form textarea:focus{
-        outline: none;
-    }
-    form input{
-        margin-top: 1.5em;
-        margin-bottom: 1em;
-    }
-    form textarea{
-        height: 25vh;
-    }
-    form select {
-        margin-left: 1em;
-    }
-    /*view task page*/
-    .viewingTask p{
-        padding-left: 10vw;
-    }
-  
+  .tasks {
+    margin-top: 1em;
+  }
+  .task {
+    margin-top: 0.3em;
+    justify-content: space-around;
+  }
+
+  .task div {
+    width: 50vw;
+    cursor: pointer;
+  }
+  #yes,
+  #no {
+    cursor: pointer;
+  }
+  #yes:hover {
+    background-color: rgb(99, 127, 204);
+  }
+  #no:hover {
+    background-color: rgb(235, 82, 82);
+  }
+
+  /* add task page*/
+  form {
+    margin: 0 12vw;
+  }
+  form select,
+  form input[type='date'],
+  .backButton {
+    cursor: pointer;
+  }
+  form select:hover,
+  form input[type='date']:hover,
+  .backButton:hover {
+    background-color: var(--backgroundDark);
+  }
+  form input,
+  form textarea {
+    width: 60vw;
+  }
+  form input:focus,
+  form textarea:focus {
+    outline: none;
+  }
+  form input {
+    margin-top: 1.5em;
+    margin-bottom: 1em;
+  }
+  form textarea {
+    height: 25vh;
+  }
+  form select {
+    margin-left: 1em;
+  }
+  /*view task page*/
+  .viewingTask p {
+    padding-left: 10vw;
+  }
 }
 
 /* large tablet & laptop styles */
-@media screen and (min-width: 960px){
-    body{
-        font-size: 18px;
-    }
-    .quote p{
-        font-size: 1.2em;
-    }
-    header figure img {
-        width: 35%;
-    }
-    .quote{
-        margin-top: 1em;
-    }
-    #jumpDate{
-        margin-left: 8em;
-    }
-    .im-menu-dot-h{
-        margin-bottom: .7em;
-        cursor: pointer;
-    }
-    .navButtons{
-        justify-content: space-around;
-    }
-    .task{
-        margin-top: 1em;
-        justify-content: space-around;
-    }
-    .im-x-mark{
-        font-size: 25px;
-    }
-    .task button{
-        height: 6vh;
-        width: 6vw;
-    }
-    .im-plus{
-        font-size: 35px;
-    }
+@media screen and (min-width: 960px) {
+  body {
+    font-size: 18px;
+  }
+  .quote p {
+    font-size: 1.2em;
+  }
+  header figure img {
+    width: 35%;
+  }
+  .quote {
+    margin-top: 1em;
+  }
+  #jumpDate {
+    margin-left: 8em;
+  }
+  .im-menu-dot-h {
+    margin-bottom: 0.7em;
+    cursor: pointer;
+  }
+  .navButtons {
+    justify-content: space-around;
+  }
+  .task {
+    margin-top: 1em;
+    justify-content: space-around;
+  }
+  .im-x-mark {
+    font-size: 25px;
+  }
+  .task button {
+    height: 6vh;
+    width: 6vw;
+  }
+  .im-plus {
+    font-size: 35px;
+  }
 
-    /* add task page*/
-    form{
-        margin: 0 12vw;
-    }
-    form select,form input[type='date'],.backButton{
-        cursor: pointer;
-    }
-    form select:hover,form input[type='date']:hover,.backButton:hover{
-        background-color: var(--backgroundDark);
-    }
-    form input,form textarea{
-        width: 60vw;
-    }
-    form input:focus,form textarea:focus{
-        outline: none;
-    }
-    form input{
-        margin-top: 1.5em;
-        margin-bottom: 1em;
-    }
-    form textarea{
-        height: 25vh;
-    }
-    form select {
-        margin-left: 1em;
-    }
-    /*view task page*/
-    .viewingTask p{
-        padding-left: 10vw;
-    }
-    .viewingTask p:nth-child(3),.viewingTask p:nth-child(4){
-        margin: 0 6vw !important;
-    }
-  
+  /* add task page*/
+  form {
+    margin: 0 12vw;
+  }
+  form select,
+  form input[type='date'],
+  .backButton {
+    cursor: pointer;
+  }
+  form select:hover,
+  form input[type='date']:hover,
+  .backButton:hover {
+    background-color: var(--backgroundDark);
+  }
+  form input,
+  form textarea {
+    width: 60vw;
+  }
+  form input:focus,
+  form textarea:focus {
+    outline: none;
+  }
+  form input {
+    margin-top: 1.5em;
+    margin-bottom: 1em;
+  }
+  form textarea {
+    height: 25vh;
+  }
+  form select {
+    margin-left: 1em;
+  }
+  /*view task page*/
+  .viewingTask p {
+    padding-left: 10vw;
+  }
+  .viewingTask p:nth-child(3),
+  .viewingTask p:nth-child(4) {
+    margin: 0 6vw !important;
+  }
 }
 
 /* desktop styles */
-@media screen and (min-width: 1200px){
-    body
-    {
-        font-size: 16px;
-    }
-    .main {
-        max-width: 1060px;
-        margin: 1em auto;
-        width: 100%;
-    }
-    header :nth-child(2) {
-        margin-top: 1.5em !important;
-        margin-left: .5em;
-        text-align:left;
-    }
-    header figure{
-        text-align: left;
-    }
-    header figure img {
-        width: 70%;
-    }
-    .quote{
-        margin-top: 1em;
-    }
-    header {
-        grid-column: 1/3;
-        grid-row: 1;
-    }
-    
-    .quote {
-        grid-column: 3/7;
-        grid-row: 1;
-    }
+@media screen and (min-width: 1200px) {
+  body {
+    font-size: 16px;
+  }
+  .main {
+    max-width: 1060px;
+    margin: 1em auto;
+    width: 100%;
+  }
+  header :nth-child(2) {
+    margin-top: 1.5em !important;
+    margin-left: 0.5em;
+    text-align: left;
+  }
+  header figure {
+    text-align: left;
+  }
+  header figure img {
+    width: 70%;
+  }
+  .quote {
+    margin-top: 1em;
+  }
+  header {
+    grid-column: 1/3;
+    grid-row: 1;
+  }
 
-    #dynamicContent{
-        display: grid;
-        grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: repeat(6, minmax(1vh, auto));
-        margin-top: 1em;
-    }
-    .goToDate{
-        grid-column:1/4;
-        grid-row: 1/2;
-    }
-    .navButtons{
-        grid-column:5/7;
-        grid-row: 1;
-    }
-    .tasks{
-        grid-column:1/5;
-        grid-row: 2;
-    }
-    .uiButtons{
-        grid-column:5/7;
-        grid-row: 2;
-    }
+  .quote {
+    grid-column: 3/7;
+    grid-row: 1;
+  }
 
-    #jumpDate{
-        margin-left: 8em;
-    }
-    .im-menu-dot-h{
-        display: none;
-        margin-left: .5em;
-        margin-bottom: .7em;
-        cursor: pointer;
-    }
-    .goToDate{
-        display: flex;
-        align-items: center;
-    }
-    .goToDate input[type="date"]{
-        width: 16em;
-    }
-    .goToDate span,.goToDate input[type="date"]{
-        padding: .3em;
-        margin-bottom: 1em;
-        display: inline-block;
-    }
-    .navButtons{
-        justify-content: space-around;
-    }
-    .tasks{
-        max-width: 700px;
-        margin: 0 0;
-        margin-top: 1em;
-        height: 70vh;
-        overflow-y: auto;
-    }
-    
-    .task{
-        margin-top: 1em;
-        justify-content: space-around;
-    }
-    .task div {
-        width: 30vw;
-        max-width: 350px;
-        cursor: pointer;
-    }
-    .im-x-mark{
-        font-size: 25px;
-    }
-    .task button{
-        height: 6vh;
-    }
-    .im-plus{
-        font-size: 35px;
-    }
-    .deletePopUp button{
-        padding: .1em .5em;
-        margin: 0 1em;
-        font-size: 1.3em;
-        background-color: var(--background);
-        color: var(--primary);
-        border-radius: 10px;
-        width: 20vw;
-        height: 7vh;
-    }
-    .deletePopUp p{
-        color: white;
-        margin: 1em;
-        font-size: 1.3em;
-        font-weight: bold;
-    }
-    .uiButtons {
-        display: flex;
-        height: auto;
-        justify-content: flex-end;
-        align-items: flex-end;
-        flex-direction: column;
-    }
+  #dynamicContent {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, minmax(1vh, auto));
+    margin-top: 1em;
+  }
+  .goToDate {
+    grid-column: 1/4;
+    grid-row: 1/2;
+  }
+  .navButtons {
+    grid-column: 5/7;
+    grid-row: 1;
+  }
+  .tasks {
+    grid-column: 1/5;
+    grid-row: 2;
+  }
+  .uiButtons {
+    grid-column: 5/7;
+    grid-row: 2;
+  }
 
-    .uiButtons button {
-        margin-top: 1.5em;
-    }
-    .uiButtons :nth-child(1) {
-        margin-bottom:.5em;
-    }
+  #jumpDate {
+    margin-left: 8em;
+  }
+  .im-menu-dot-h {
+    display: none;
+    margin-left: 0.5em;
+    margin-bottom: 0.7em;
+    cursor: pointer;
+  }
+  .goToDate {
+    display: flex;
+    align-items: center;
+  }
+  .goToDate input[type='date'] {
+    width: 16em;
+  }
+  .goToDate span,
+  .goToDate input[type='date'] {
+    padding: 0.3em;
+    margin-bottom: 1em;
+    display: inline-block;
+  }
+  .navButtons {
+    justify-content: space-around;
+  }
+  .tasks {
+    max-width: 700px;
+    margin: 0 0;
+    margin-top: 1em;
+    height: 70vh;
+    overflow-y: auto;
+  }
 
-    /* add task page*/
-    form{
-        margin: 0 12vw;
-    }
-    
-    form input,form textarea{
-        width: 60vw;
-        max-width: 700px;
-    }
-    
-    /*view task page*/
-    .viewingTask p{
-        margin: 0 6vw !important;
-    }
-    .viewingTask p:nth-child(1){
-        padding-right: 6em;
-        text-align: right;
-    }
-    .viewingTask{
-        max-width: 1060px;
-    }
+  .task {
+    margin-top: 1em;
+    justify-content: space-around;
+  }
+  .task div {
+    width: 30vw;
+    max-width: 350px;
+    cursor: pointer;
+  }
+  .im-x-mark {
+    font-size: 25px;
+  }
+  .task button {
+    height: 6vh;
+  }
+  .im-plus {
+    font-size: 35px;
+  }
+  .deletePopUp button {
+    padding: 0.1em 0.5em;
+    margin: 0 1em;
+    font-size: 1.3em;
+    background-color: var(--background);
+    color: var(--primary);
+    border-radius: 10px;
+    width: 20vw;
+    height: 7vh;
+  }
+  .deletePopUp p {
+    color: white;
+    margin: 1em;
+    font-size: 1.3em;
+    font-weight: bold;
+  }
+  .uiButtons {
+    display: flex;
+    height: auto;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+  }
+
+  .uiButtons button {
+    margin-top: 1.5em;
+  }
+  .uiButtons :nth-child(1) {
+    margin-bottom: 0.5em;
+  }
+
+  /* add task page*/
+  form {
+    margin: 0 12vw;
+  }
+
+  form input,
+  form textarea {
+    width: 60vw;
+    max-width: 700px;
+  }
+
+  /*view task page*/
+  .viewingTask p {
+    margin: 0 6vw !important;
+  }
+  .viewingTask p:nth-child(1) {
+    padding-right: 6em;
+    text-align: right;
+  }
+  .viewingTask {
+    max-width: 1060px;
+  }
 }
