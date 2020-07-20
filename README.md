@@ -15,7 +15,7 @@ Dulcet is a cross platform SPA :earth_asia:. As the tagline says ,it is a "minim
 It doesn't use any server side architecture, all the data is stored in browser.I wanted to keep it simple and create an elegant web app without any fancy frameworks and show the capabilities of Vanilla js with plain HTML,CSS 
 
 
-# ScreenShots
+# Screenshots
   <div style=" width: 60vw;
             margin: 0 auto;">
        <p align="center">Desktop</p>
