@@ -10,7 +10,7 @@
     <a href="#techused">TechUsed</a> •
 </p>
 
-Dulcet is a cross platform SPA :earth_asia:. As the tagline says ,it is a "minimalistic to-do app" :clipboard:. You can add , update , delete tasks for a certain day. Revisit previous days to check the old tasks and go to future dates to add tasks on that day.
+Dulcet is a web application 🌏 that allows users to add tasks everyday with a priority and deadline, developed using vanilla javascript to manage state and render pages.🌏. As the tagline says ,it is a "minimalistic to-do app" 📋. You can add , update , delete tasks for a certain day. Revisit previous days to check the old tasks and go to future dates to add tasks on that day.
 
 It doesn't use any server side architecture, all the data is stored in browser.I wanted to keep it simple and create an elegant web app without any fancy frameworks and show the capabilities of Vanilla js with plain HTML,CSS 
 
